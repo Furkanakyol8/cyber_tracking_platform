@@ -4,6 +4,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  enum role: [:member, :admin]
+  after_initialize do
+    if self.new_record?
+      self.role ||= :member
+    end
+  end
   def full_name
     "#{first_name} #{last_name}"
   end
