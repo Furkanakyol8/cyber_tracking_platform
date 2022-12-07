@@ -1,6 +1,7 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: %i[ show edit update destroy ]
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  # skip_before_action :authenticate_user!, only: [:index, :show]
+  before_action :user
 
   # GET /reports or /reports.json
   def index
