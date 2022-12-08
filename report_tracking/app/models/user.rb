@@ -5,11 +5,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   enum role: [:member, :admin]
-  after_initialize do
-    if self.new_record?
-      self.role ||= :member
-    end
+  after_initialize :set_default_role, :if => :new_record?
+  def set_default_role
+    self.role ||= :member
   end
+
   def full_name
     "#{first_name} #{last_name}"
   end

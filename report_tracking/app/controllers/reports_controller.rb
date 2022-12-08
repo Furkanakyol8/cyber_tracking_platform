@@ -1,7 +1,7 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: %i[ show edit update destroy ]
   # skip_before_action :authenticate_user!, only: [:index, :show]
-
+  # before_action :current_user == "member", only: %i[index show]
 
   # GET /reports or /reports.json
   def index
@@ -56,6 +56,12 @@ class ReportsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to reports_url, notice: "Report was successfully destroyed." }
       format.json { head :no_content }
+    end
+  end
+
+  def rolecontrol
+    if current_user.member?
+
     end
   end
 

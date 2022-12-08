@@ -1,5 +1,5 @@
-<%= button_to "reports", reports_path, method: :get %>
 <% if user_signed_in? %>
+  <%= button_to "reports", reports_path, method: :get %>
   <%= button_to "profile", user_profile_path, method: :get %>
   <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
 <% else %>
