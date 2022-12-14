@@ -1,7 +1,16 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: %i[ show edit update destroy ]
-  # skip_before_action :authenticate_user!, only: [:index, :show]
-  # before_action :current_user == "member", only: %i[index show]
+  before_action :authenticate_user!, only: [:index, :show]
+  before_action :authorization_check, only: [:new, :create, :destroy, :update]
+  # before_action :current_user == "member", only: %i[:index, :show]
+
+  def authorization_check
+    # If either one of them is true this filter won’t do anything, allowing the requested user registration form to be rendered
+    if current_user.role != "admin" # checking if there are either zero registered users OR if there is a user already logged in
+      redirect_to root_path # if neither are true, then redirect to root_path and return false
+      return false
+    end
+  end
 
   # GET /reports or /reports.json
   def index
@@ -59,21 +68,21 @@ class ReportsController < ApplicationController
     end
   end
 
-  def rolecontrol
-    if current_user.member?
 
-    end
-  end
 
   def profile
 
   end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_report
       @report = Report.find(params[:id])
     end
+
+
 
     # Only allow a list of trusted parameters through.
     def report_params

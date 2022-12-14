@@ -6,4 +6,6 @@
   <p>Company Info: <%= current_user.company_info %></p>
   <p>Email: <%= current_user.email %></p>
   <p>Username: <%= current_user.username %></p>
+  <p>Role: <%=current_user.role %></p>
+  <%= link_to "Edit Profile", edit_user_registration_path(current_user)%>
 </div>

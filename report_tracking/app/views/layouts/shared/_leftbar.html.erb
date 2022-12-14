@@ -77,10 +77,12 @@
             
             
              <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                   <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Sign Out</span></a>
+                <%= link_to destroy_user_session_path, :method => :delete, class: "nav-link" do %>
+                 <i class="fa-solid fa-right-from-bracket"></i> <span>Sign Out</span>
+               <% end %>
+
             </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
