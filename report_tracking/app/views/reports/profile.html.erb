@@ -1,0 +1,20 @@
+<div class = "container">
+  <div class = "list-group-horizontal">
+    <ul class="list-group  ">
+
+      <li class="list-group-item">Full name : <%= current_user.full_name %></li>
+      <li class="list-group-item">Phone: <%= current_user.phone %></li>
+      <li class="list-group-item">Company Info: <%= current_user.company_info %></li>
+      <li class="list-group-item">Email: <%= current_user.email %></li>
+      <li class="list-group-item">Username: <%= current_user.username %></li>
+      <button type="button" class="btn btn-primary"> <%= link_to "Edit Profile", edit_user_registration_path(current_user)%></button>
+      
+  
+    </ul>
+  </div>
+</div>
+
+
+
+
+
