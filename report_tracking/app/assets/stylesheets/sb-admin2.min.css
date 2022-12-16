@@ -2306,6 +2306,22 @@
       margin-bottom: 0;
     }
   }
+
+  .d-grid{
+    display: grid;
+  }
+
+  .place-items-center{
+    place-items: center;
+  }
+
+  .fw-bold{
+    font-weight: bold;
+  }
+  
+  .fst-italic{
+    font-style: italic;
+  }
   
   .btn {
     display: inline-block;
