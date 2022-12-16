@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fa-solid fa-folder"></i>
                 </div>
@@ -14,7 +14,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="home">
                     <i class="fa-solid fa-folder"></i>
                     <span>Ana Sayfa</span></a>
             </li>
@@ -28,21 +28,23 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" 
-                    aria-expanded="true" aria-controls="collapseTwo">
-                   <i class="fa-solid fa-folder"></i>
-                    <span>Müşteri</span>
-                </a>
-                
-            </li>
+            <% if current_user.admin? %>
+              <li class="nav-item">
+                  <a class="nav-link collapsed" href="customers"
+                      aria-expanded="true" aria-controls="collapseTwo">
+                     <i class="fa-solid fa-folder"></i>
+                      <span>Müşteri Tablosu</span>
+                  </a>
+              </li>
+            <% end %>
+
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" 
+                <a class="nav-link collapsed" href="about"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fa-solid fa-folder"></i>
-                    <span>Şirket</span>
+                    <span>Hakkımızda</span>
                 </a>
                
             </li>
@@ -57,19 +59,19 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" 
+                <a class="nav-link collapsed" href="index.html"
                     aria-expanded="true" aria-controls="collapsePages">
                    <i class="fa-solid fa-folder"></i>
-                    <span>Rapor</span>
+                    <span>Raporlarım</span>
                 </a>
                 
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="services">
                     <i class="fa-solid fa-folder"></i>
-                    <span>Hizmet</span></a>
+                    <span>Hizmetler</span></a>
             </li>
              <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
