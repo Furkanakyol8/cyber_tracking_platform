@@ -7129,3 +7129,63 @@ Processing by AboutController#index as HTML
 Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 0.8ms | Allocations: 10385)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-16 09:38:45 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms | Allocations: 5572)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-16 09:38:45 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 1098)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4947)
+  Rendered layout layouts/application.html.erb (Duration: 167.9ms | Allocations: 80223)
+Completed 200 OK in 197ms (Views: 170.8ms | ActiveRecord: 3.0ms | Allocations: 104179)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-16 09:38:51 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"furkan@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "furkan@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 194ms (ActiveRecord: 0.7ms | Allocations: 7684)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-16 09:38:51 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/shared/_nav.html.erb (Duration: 4.7ms | Allocations: 481)
+  Rendered home/index.html.erb within layouts/application (Duration: 24.1ms | Allocations: 1414)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 626)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 9688)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.2ms | Allocations: 12141)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-16 09:39:27 +0300
+Processing by ReportsController#profile as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reports/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/reports/profile.html.erb:5
+  Rendered reports/profile.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1685)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 9360)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 10494)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-16 09:39:36 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 5199)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.2ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 12840)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.3ms | Allocations: 15633)
+
+
