@@ -1,11 +1,27 @@
-<p style="color: green"><%= notice %></p>
-<div id="reports">
-  <% @reports.each do |report| %>
-    <%= render report %>
-    <p>
-      <%= link_to "Show this report", report %>
-    </p>
-  <% end %>
-  <%= link_to "New report", new_report_path %>
+<div class="w-100">
+  <table class="table m-5">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">  </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+
+    <% @reports.first(10).each do |report| %>
+      <tr>
+        <th><%= report.id %></th>
+        <td><%= report.title %></td>
+        <td class="col-2"><%= report.description %></td>
+        <td><button type="button" class="btn btn-light"> <%= link_to "Show this report", report %></button></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
 </div>
 
+
+ 
