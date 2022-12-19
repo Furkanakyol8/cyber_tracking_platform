@@ -72,6 +72,8 @@ class ReportsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_report
       @report = Report.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      redirect_to reports_path
     end
 
 
