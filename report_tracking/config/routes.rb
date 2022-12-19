@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'home', to: 'home#index'
   get 'index.html', to: 'reports#index'
   get 'services', to: 'services#index'
-  get 'profile', to: 'reports#profile'  # , as: :user_profile
+  get 'profile', to: 'profiles#index'  # , as: :user_profile
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
