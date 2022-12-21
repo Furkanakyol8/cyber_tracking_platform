@@ -68,6 +68,9 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    ajax-datatables-rails (1.4.0)
+      rails (>= 5.2)
+      zeitwerk
     bcrypt (3.1.18)
     bindex (0.8.1)
     bootsnap (1.15.0)
@@ -110,6 +113,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jquery-datatables (1.10.20)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -225,6 +229,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  ajax-datatables-rails
   bootsnap
   capybara
   debug
@@ -232,6 +237,7 @@ DEPENDENCIES
   font-awesome-sass (~> 6.2.1)
   importmap-rails
   jbuilder
+  jquery-datatables
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)

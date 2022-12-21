@@ -3495,6 +3495,15 @@
     border: 1px solid #d1d3e2;
     border-radius: 0.35rem;
   }
+
+  .border-radius-sm{
+    border-radius: 10px;
+  }
+
+  
+  .border-radius-md{
+    border-radius: 20px;
+  }
   
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
@@ -6670,6 +6679,17 @@
   
   .d-flex {
     display: flex !important;
+  }
+
+  .dark-bg {
+    background-image: linear-gradient(rgba(255,255,255, .9), rgba(255,255,255, .9));
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .dark-bg {
+    height: 30vh;
   }
   
   .d-inline-flex {
