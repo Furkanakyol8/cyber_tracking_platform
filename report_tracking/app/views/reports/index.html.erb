@@ -1,5 +1,5 @@
 <div class="w-100">
-  <table class="table m-5">
+  <table class="table m-5 text-justify: inter-character">
     <thead>
     <tr>
       <th scope="col">#</th>
@@ -21,7 +21,10 @@
     <% end %>
     </tbody>
   </table>
-  <%= link_to "New report", new_report_path %>
+<%= link_to "New report", new_report_path %>
+
+  <td><button type="button" class="btn btn-light"><%= link_to "New Report", new_report_path%></button></td>
+
 </div>
 
 

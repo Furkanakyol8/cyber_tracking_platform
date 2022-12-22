@@ -74,7 +74,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  
+  gem "ajax-datatables-rails"
+  gem "jquery-datatables"
 
 end
 gem "font-awesome-sass", "~> 6.2.1"

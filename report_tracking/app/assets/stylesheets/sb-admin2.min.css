@@ -406,6 +406,7 @@
     font-weight: 300;
     line-height: 1.2;
   }
+
   
   .display-3 {
     font-size: 4.5rem;
@@ -3494,6 +3495,15 @@
     background-color: #eaecf4;
     border: 1px solid #d1d3e2;
     border-radius: 0.35rem;
+  }
+
+  .border-radius-sm{
+    border-radius: 10px;
+  }
+
+  
+  .border-radius-md{
+    border-radius: 20px;
   }
   
   .input-group-text input[type="radio"],
@@ -6671,6 +6681,25 @@
   .d-flex {
     display: flex !important;
   }
+
+  .dark-bg {
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    border-radius: 20px;
+    width:  85%;
+    margin: 2rem;
+  }
+
+  #hero .container {
+    height: 40vh;
+
+}
+
+.generic{
+  padding: 100px 0;
+}
   
   .d-inline-flex {
     display: inline-flex !important;
@@ -9762,6 +9791,7 @@
     }
     .container {
       min-width: 992px !important;
+      
     }
     .navbar {
       display: none;
