@@ -24159,3 +24159,1355 @@ Processing by AboutController#index as HTML
 Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 12730)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-22 18:23:53 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1064)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.3ms | Allocations: 1170)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.6ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 167.9ms | Allocations: 97859)
+Completed 200 OK in 204ms (Views: 171.3ms | ActiveRecord: 4.9ms | Allocations: 129666)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-22 18:23:56 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 332)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7876)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 10000)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:23:59 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 283)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 376)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 8302)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.4ms | Allocations: 11004)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:24:03 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 7717)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 9792)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:24:05 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 7717)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 9600)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:24:06 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 15668)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 23617)
+Completed 200 OK in 26ms (Views: 19.1ms | ActiveRecord: 2.7ms | Allocations: 26964)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:24:06 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 403)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 376)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8420)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 11091)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:24:08 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 827)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 8520)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.6ms | Allocations: 10609)
+
+
+Started GET "/reports/6" for 127.0.0.1 at 2022-12-22 18:24:11 +0300
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/show.html.erb within layouts/application
+  Rendered reports/_report.html.erb (Duration: 0.5ms | Allocations: 267)
+  Rendered reports/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1382)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 306)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 9174)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 0.5ms | Allocations: 12337)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:24:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:24:12 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 6.6ms | Allocations: 3994)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 7.5ms | Allocations: 4394)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.4ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 13255)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.5ms | Allocations: 14270)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:24:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:25:00 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.3ms | Allocations: 1919)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2341)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.5ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.6ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 12831)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.7ms | Allocations: 14497)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:25:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:25:01 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 4.3ms | Allocations: 1293)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1416)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.9ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 9874)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 0.8ms | Allocations: 10745)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:25:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:25:56 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.6ms | Allocations: 1924)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2346)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.8ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.6ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 12864)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.6ms | Allocations: 14498)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:25:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:28:23 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.0ms | Allocations: 1927)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2354)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.6ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 12875)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.6ms | Allocations: 14541)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:28:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:29:14 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 1.8ms | Allocations: 1906)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2332)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.4ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 12819)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 14484)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:29:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:29:43 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 1.9ms | Allocations: 1939)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2345)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.3ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.5ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 12830)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.6ms | Allocations: 14495)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:29:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:30:27 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.1ms | Allocations: 1930)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2355)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.1ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 12955)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.5ms | Allocations: 14623)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:30:27 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/home" for 127.0.0.1 at 2022-12-22 18:33:27 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 746)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.1ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 8877)
+Completed 200 OK in 38ms (Views: 23.8ms | ActiveRecord: 0.8ms | Allocations: 11334)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:33:29 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 444)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 338)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 8381)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 11092)
+
+
+Started GET "/users/edit.40" for 127.0.0.1 at 2022-12-22 18:33:30 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 286)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 15.1ms | Allocations: 6095)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 340)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 14012)
+Completed 200 OK in 32ms (Views: 26.0ms | ActiveRecord: 0.3ms | Allocations: 17462)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:33:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/profile" for 127.0.0.1 at 2022-12-22 18:33:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/profile"):
+  
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:34:10 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1289)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 376)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9402)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 1.0ms | Allocations: 12287)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:34:12 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 282)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 8298)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 10836)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:34:13 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.5ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1134)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 8938)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.7ms | Allocations: 11110)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:34:14 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 402)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 8422)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 10855)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:34:16 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 123)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 7803)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 9875)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-12-22 18:34:19 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 7715)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 9579)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:34:26 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 823)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8516)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 10425)
+
+
+Started GET "/reports/6" for 127.0.0.1 at 2022-12-22 18:34:28 +0300
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/show.html.erb within layouts/application
+  Rendered reports/_report.html.erb (Duration: 0.6ms | Allocations: 208)
+  Rendered reports/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 919)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 8594)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 11059)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:34:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:34:40 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 1.9ms | Allocations: 1354)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1477)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 10045)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.7ms | Allocations: 10883)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:34:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/home" for 127.0.0.1 at 2022-12-22 18:35:27 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 7715)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.3ms | Allocations: 9604)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:35:28 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 7808)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 9667)
+
+
+Started GET "/users/edit.40" for 127.0.0.1 at 2022-12-22 18:35:30 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3037)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 45)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 10756)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 12728)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:35:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:44:09 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1342)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 985)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 11059)
+Completed 200 OK in 33ms (Views: 15.6ms | ActiveRecord: 6.7ms | Allocations: 16751)
+
+
+Started GET "/reports/6" for 127.0.0.1 at 2022-12-22 18:44:11 +0300
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/show.html.erb within layouts/application
+  Rendered reports/_report.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered reports/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 922)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8593)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.6ms | Allocations: 11165)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:44:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:44:12 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 3.4ms | Allocations: 5300)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 5606)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5681)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 6559)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x00000000011418>):
+    21: 
+    22: <div class="d-flex justify-content-center w-100">
+    23:   <div class="form-group row">
+    24:           <%= f.label :description, class:"form-label", style: "display: block" %><br />
+    25:           <%= f.text_area :description, class:"form-control", id:"inputCity" %>
+    26:   </div>
+    27: 
+  
+app/views/reports/_form.html.erb:24
+app/views/reports/_form.html.erb:1
+app/views/reports/edit.html.erb:3
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:50:07 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.7ms | Allocations: 1994)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2418)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.1ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 1.0ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 13046)
+Completed 200 OK in 27ms (Views: 16.9ms | ActiveRecord: 4.2ms | Allocations: 17626)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:50:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:50:30 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.1ms | Allocations: 2017)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2441)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.6ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 12926)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.6ms | Allocations: 14591)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:50:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:50:44 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.5ms | Allocations: 2010)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2434)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.9ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 12919)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.7ms | Allocations: 14584)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:50:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:51:25 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 3.0ms | Allocations: 2016)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2443)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.4ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 13043)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.7ms | Allocations: 14711)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:51:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:52:04 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.1ms | Allocations: 2003)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2427)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.1ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 1.1ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 13027)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.6ms | Allocations: 14693)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:52:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:52:15 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.9ms | Allocations: 1992)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2416)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.3ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.8ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 12901)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.6ms | Allocations: 14566)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:52:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 18:52:31 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.1ms | Allocations: 2013)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2437)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.2ms | Allocations: 976)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.5ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 12995)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.5ms | Allocations: 14661)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:52:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:19:32 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 1.5ms | Allocations: 1314)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1437)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 10035)
+Completed 200 OK in 23ms (Views: 11.1ms | ActiveRecord: 4.9ms | Allocations: 13849)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:19:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:21:04 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.5ms | Allocations: 2004)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2428)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.1ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 1.0ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 12978)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.7ms | Allocations: 14611)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:21:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:21:19 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 1.9ms | Allocations: 1991)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2415)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.2ms | Allocations: 976)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 13018)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.6ms | Allocations: 14684)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:21:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 19:38:21 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1282)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 9394)
+Completed 200 OK in 47ms (Views: 22.9ms | ActiveRecord: 10.3ms | Allocations: 14877)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 19:38:22 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 282)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.9ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 8298)
+Completed 200 OK in 29ms (Views: 23.6ms | ActiveRecord: 0.7ms | Allocations: 10839)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 19:38:29 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 402)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 8418)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 0.5ms | Allocations: 11048)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 19:38:31 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 807)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 8505)
+Completed 200 OK in 24ms (Views: 16.5ms | ActiveRecord: 1.2ms | Allocations: 10611)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 19:38:33 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 7715)
+Completed 200 OK in 18ms (Views: 10.9ms | ActiveRecord: 0.8ms | Allocations: 9596)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 19:38:35 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.9ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1134)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8892)
+Completed 200 OK in 25ms (Views: 17.6ms | ActiveRecord: 1.5ms | Allocations: 10892)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 19:38:37 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 7715)
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 0.6ms | Allocations: 9631)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 19:38:38 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 813)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.2ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 8506)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 1.2ms | Allocations: 10374)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 19:38:39 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 429)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 8366)
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.5ms | Allocations: 10791)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 19:38:47 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 7715)
+Completed 200 OK in 19ms (Views: 12.4ms | ActiveRecord: 0.6ms | Allocations: 9778)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 19:38:48 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 807)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.5ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 8589)
+Completed 200 OK in 28ms (Views: 22.9ms | ActiveRecord: 1.1ms | Allocations: 10491)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 19:38:49 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 7756)
+Completed 200 OK in 18ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 9629)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 19:38:50 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 820)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 8513)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 1.1ms | Allocations: 10419)
+
+
+Started GET "/reports/6" for 127.0.0.1 at 2022-12-22 19:38:52 +0300
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/show.html.erb within layouts/application
+  Rendered reports/_report.html.erb (Duration: 1.0ms | Allocations: 208)
+  Rendered reports/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 921)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 8591)
+Completed 200 OK in 25ms (Views: 15.9ms | ActiveRecord: 1.0ms | Allocations: 11084)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:38:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:38:54 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 1.9ms | Allocations: 1390)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1513)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 10056)
+Completed 200 OK in 24ms (Views: 18.9ms | ActiveRecord: 0.9ms | Allocations: 10894)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:38:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 19:40:31 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 804)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8567)
+Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 1.1ms | Allocations: 10475)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 19:40:33 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 7795)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 9705)
+
+
+Started GET "/users/edit.40" for 127.0.0.1 at 2022-12-22 19:40:34 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 2.0ms | Allocations: 250)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 10.1ms | Allocations: 4447)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 334)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 12445)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 0.6ms | Allocations: 15124)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:40:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 19:41:26 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1280)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.8ms | Allocations: 1024)
+  Rendered layouts/shared/_nav.html.erb (Duration: 1.4ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 10975)
+Completed 200 OK in 32ms (Views: 23.4ms | ActiveRecord: 1.2ms | Allocations: 13843)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 19:41:28 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 402)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.4ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8420)
+Completed 200 OK in 25ms (Views: 18.0ms | ActiveRecord: 0.5ms | Allocations: 10949)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 19:41:33 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.7ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1338)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 336)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9330)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 1.2ms | Allocations: 12045)
+
+
+Started GET "/reports/6" for 127.0.0.1 at 2022-12-22 19:41:35 +0300
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/show.html.erb within layouts/application
+  Rendered reports/_report.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered reports/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 922)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8634)
+Completed 200 OK in 23ms (Views: 14.7ms | ActiveRecord: 1.0ms | Allocations: 11192)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:41:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:41:37 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 5.1ms | Allocations: 1860)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2227)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 10750)
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 1.1ms | Allocations: 11640)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:41:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:41:38 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.1ms | Allocations: 1332)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1455)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 10028)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 1.2ms | Allocations: 10867)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:41:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:42:02 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.5ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 3.1ms | Allocations: 1332)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1455)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 10028)
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 1.1ms | Allocations: 10866)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:42:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:44:09 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 4.2ms | Allocations: 2001)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2428)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 2.3ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.9ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 13028)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 0.8ms | Allocations: 14664)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:44:09 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:44:10 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 2.1ms | Allocations: 1323)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1446)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 10019)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.8ms | Allocations: 10889)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:44:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/home" for 127.0.0.1 at 2022-12-22 19:44:59 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 746)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8877)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.5ms | Allocations: 11324)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 19:45:00 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 429)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 8366)
+Completed 200 OK in 22ms (Views: 17.4ms | ActiveRecord: 0.5ms | Allocations: 10980)
+
+
+Started GET "/users/edit.40" for 127.0.0.1 at 2022-12-22 19:45:02 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 250)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4447)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 334)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 12367)
+Completed 200 OK in 32ms (Views: 26.0ms | ActiveRecord: 0.4ms | Allocations: 15190)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:45:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 19:45:53 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1339)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.7ms | Allocations: 985)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 11056)
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 1.0ms | Allocations: 13915)
+
+
+Started GET "/reports/6" for 127.0.0.1 at 2022-12-22 19:45:58 +0300
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/show.html.erb within layouts/application
+  Rendered reports/_report.html.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered reports/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 922)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 8707)
+Completed 200 OK in 28ms (Views: 18.6ms | ActiveRecord: 0.9ms | Allocations: 11268)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:45:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:46:02 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 3.6ms | Allocations: 1863)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2230)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 298)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 10725)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 1.1ms | Allocations: 11615)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:46:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:46:32 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 5.3ms | Allocations: 2001)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2426)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 2.7ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 2.0ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 13022)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 1.0ms | Allocations: 14658)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:46:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:46:51 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 4.5ms | Allocations: 2001)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2425)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.7ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 1.6ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 13021)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 1.1ms | Allocations: 14687)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:46:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
+Started GET "/reports/6/edit" for 127.0.0.1 at 2022-12-22 19:47:05 +0300
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.4ms)[0m  [1m[34mSELECT "reports".* FROM "reports" WHERE "reports"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:67:in `set_report'
+  Rendering layout layouts/application.html.erb
+  Rendering reports/edit.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 5.6ms | Allocations: 2010)
+  Rendered reports/edit.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2434)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 2.7ms | Allocations: 971)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.9ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 13036)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 0.9ms | Allocations: 14704)
+
+
+Started GET "/reports/6/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 19:47:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/6/img/undraw_profile.svg"):
+  
