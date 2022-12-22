@@ -9,7 +9,6 @@ class User < ApplicationRecord
     if self.new_record?
       self.role ||= :member
     end
-
   end
 
   def full_name
