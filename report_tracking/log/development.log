@@ -18418,3 +18418,1289 @@ Processing by AboutController#index as HTML
 Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 12730)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-22 18:36:01 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/furkan/Desktop/privia-security/cyber_tracking_platform/report_tracking/app/controllers/application_controller.rb:3)
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1064)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 1128)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.5ms | Allocations: 486)
+  Rendered layout layouts/application.html.erb (Duration: 1084.2ms | Allocations: 147833)
+Completed 200 OK in 1115ms (Views: 1086.4ms | ActiveRecord: 2.8ms | Allocations: 179463)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:36:06 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 283)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 329)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 8260)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 10781)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:36:07 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 15717)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 288)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 23624)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 1.9ms | Allocations: 26762)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:36:08 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 403)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 329)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 8380)
+Completed 200 OK in 17ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 10886)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:36:09 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 854)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 255)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 8627)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.5ms | Allocations: 10505)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:36:11 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 269)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 7678)
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 0.5ms | Allocations: 9371)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:36:27 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 269)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 7676)
+Completed 200 OK in 31ms (Views: 21.4ms | ActiveRecord: 0.6ms | Allocations: 9350)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:36:29 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 255)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8575)
+Completed 200 OK in 19ms (Views: 13.9ms | ActiveRecord: 0.6ms | Allocations: 10277)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:36:33 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 7684)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 9356)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:37:06 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 255)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 8494)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 10205)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2022-12-22 18:37:08 +0300
+Processing by ReportsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 27.0ms | Allocations: 6271)
+  Rendered reports/new.html.erb within layouts/application (Duration: 29.4ms | Allocations: 6611)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 15358)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.2ms | Allocations: 15834)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:37:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started GET "/reports/new" for 127.0.0.1 at 2022-12-22 18:37:10 +0300
+Processing by ReportsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/_form.html.erb (Duration: 1.7ms | Allocations: 1206)
+  Rendered reports/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1295)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 258)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 45)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 9975)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 10373)
+
+
+Started GET "/reports/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:37:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/reports/img/undraw_profile.svg"):
+  
+Started POST "/reports" for 127.0.0.1 at 2022-12-22 18:37:17 +0300
+Processing by ReportsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "report"=>{"title"=>"hello", "description"=>"havagiii"}, "commit"=>"Create Report"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reports_controller.rb:28:in `create'
+Redirected to http://127.0.0.1:3000/home
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 2636)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-12-22 18:37:17 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 277)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 7822)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 9766)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:37:19 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.7ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 854)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 255)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 8508)
+Completed 200 OK in 32ms (Views: 23.5ms | ActiveRecord: 1.2ms | Allocations: 10193)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:39:05 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.7ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 255)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 8494)
+Completed 200 OK in 31ms (Views: 22.4ms | ActiveRecord: 1.2ms | Allocations: 10196)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2022-12-22 18:39:13 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 3873)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-22 18:39:13 +0300
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 447)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-22 18:39:13 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 1081)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3721)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 11197)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 12808)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-22 18:39:16 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"furkan@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "furkan@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 190ms (ActiveRecord: 0.2ms | Allocations: 4719)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-22 18:39:16 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 329)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7883)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 9757)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:40:38 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 446)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 338)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 8503)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 11019)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:40:47 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 255)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4904)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 334)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 12791)
+Completed 200 OK in 31ms (Views: 23.4ms | ActiveRecord: 0.5ms | Allocations: 15571)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:40:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/profile" for 127.0.0.1 at 2022-12-22 18:41:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/profile"):
+  
+Started GET "/users/profile" for 127.0.0.1 at 2022-12-22 18:41:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/profile"):
+  
+Started GET "/users/profile" for 127.0.0.1 at 2022-12-22 18:41:24 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/profile"):
+  
+Started GET "/users/profile" for 127.0.0.1 at 2022-12-22 18:41:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/profile"):
+  
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:42:44 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 852)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 302)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 8669)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 10519)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:42:59 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1544)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 376)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 9610)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 12194)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:01 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 123)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 7839)
+Completed 200 OK in 24ms (Views: 15.5ms | ActiveRecord: 0.5ms | Allocations: 9630)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:43:03 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 8773)
+Completed 200 OK in 29ms (Views: 20.3ms | ActiveRecord: 1.2ms | Allocations: 10493)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:04 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 7809)
+Completed 200 OK in 36ms (Views: 27.1ms | ActiveRecord: 0.6ms | Allocations: 9492)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:43:05 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3094)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 10760)
+Completed 200 OK in 27ms (Views: 19.5ms | ActiveRecord: 0.5ms | Allocations: 12504)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:43:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:43:09 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 316)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 7723)
+Completed 200 OK in 28ms (Views: 17.6ms | ActiveRecord: 0.6ms | Allocations: 9392)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:12 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 7800)
+Completed 200 OK in 30ms (Views: 22.1ms | ActiveRecord: 0.6ms | Allocations: 9477)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:43:13 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3021)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 10687)
+Completed 200 OK in 24ms (Views: 18.9ms | ActiveRecord: 0.4ms | Allocations: 12435)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:43:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/profile" for 127.0.0.1 at 2022-12-22 18:43:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/profile"):
+  
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:19 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 7920)
+Completed 200 OK in 25ms (Views: 16.7ms | ActiveRecord: 0.5ms | Allocations: 9620)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:20 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 7910)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 9601)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:21 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 7851)
+Completed 200 OK in 27ms (Views: 18.7ms | ActiveRecord: 0.6ms | Allocations: 9528)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:43:22 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3021)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 10718)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.3ms | Allocations: 12479)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:43:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:30 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 7809)
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 9501)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:43:33 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 7800)
+Completed 200 OK in 28ms (Views: 16.0ms | ActiveRecord: 0.6ms | Allocations: 9528)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:43:35 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3021)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 10687)
+Completed 200 OK in 31ms (Views: 22.6ms | ActiveRecord: 0.7ms | Allocations: 12472)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:43:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:44:03 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 250)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 12.0ms | Allocations: 4448)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.6ms | Allocations: 983)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.8ms | Allocations: 469)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 13988)
+Completed 200 OK in 43ms (Views: 34.7ms | ActiveRecord: 0.5ms | Allocations: 16687)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:44:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:44:04 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 434)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 8491)
+Completed 200 OK in 30ms (Views: 14.2ms | ActiveRecord: 0.4ms | Allocations: 10886)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:44:07 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3094)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 10878)
+Completed 200 OK in 32ms (Views: 23.4ms | ActiveRecord: 0.6ms | Allocations: 12822)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:44:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:44:08 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 7910)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 9604)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:45:09 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 430)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 987)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.5ms | Allocations: 574)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 10134)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.2ms | Allocations: 12507)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:45:16 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 430)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.6ms | Allocations: 987)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 566)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 10126)
+Completed 200 OK in 31ms (Views: 21.5ms | ActiveRecord: 0.6ms | Allocations: 12720)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:45:23 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 430)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.1ms | Allocations: 987)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.9ms | Allocations: 563)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 10132)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 12708)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:45:24 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 7846)
+Completed 200 OK in 21ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 9758)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:45:25 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 250)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 10.3ms | Allocations: 4447)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 334)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 12383)
+Completed 200 OK in 33ms (Views: 25.0ms | ActiveRecord: 0.6ms | Allocations: 14850)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:45:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:45:26 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 7851)
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 0.5ms | Allocations: 9714)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:45:28 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 3021)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 10733)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 12491)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:45:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:45:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:46:05 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 3021)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 10848)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 12599)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:46:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:46:28 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 250)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 4448)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 983)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 563)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 14091)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 16806)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:46:45 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 4448)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 984)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.6ms | Allocations: 562)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 14082)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.2ms | Allocations: 16994)
+
+
+Started GET "/users/img/undraw_profile.svg" for 127.0.0.1 at 2022-12-22 18:46:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/img/undraw_profile.svg"):
+  
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:46:54 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 250)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4448)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.2ms | Allocations: 983)
+  Rendered layouts/shared/_nav.html.erb (Duration: 5.1ms | Allocations: 562)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 14081)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.3ms | Allocations: 16947)
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2022-12-22 18:47:06 +0300
+Processing by Devise::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/registrations/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3021)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 300)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 10770)
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 0.4ms | Allocations: 12740)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-12-22 18:47:07 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 434)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 338)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 8425)
+Completed 200 OK in 30ms (Views: 19.5ms | ActiveRecord: 0.5ms | Allocations: 10664)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:47:33 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1535)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 9598)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 12129)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:34 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 282)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 8352)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 10698)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:47:35 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1063)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 8822)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 10707)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:35 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 7766)
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 0.6ms | Allocations: 9441)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:47:36 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 8854)
+Completed 200 OK in 27ms (Views: 18.4ms | ActiveRecord: 1.2ms | Allocations: 10561)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:36 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 7768)
+Completed 200 OK in 20ms (Views: 13.4ms | ActiveRecord: 0.4ms | Allocations: 9484)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:47:37 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1386)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 336)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 9389)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.5ms | Allocations: 11720)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:47:37 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 375)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 8472)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 10806)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:47:38 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 854)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8598)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.5ms | Allocations: 10492)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:38 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7767)
+Completed 200 OK in 19ms (Views: 12.8ms | ActiveRecord: 0.4ms | Allocations: 9463)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:47:39 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8828)
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 0.7ms | Allocations: 10537)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:39 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 7766)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 9449)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:47:40 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 8819)
+Completed 200 OK in 29ms (Views: 19.8ms | ActiveRecord: 1.1ms | Allocations: 10529)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:40 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 7766)
+Completed 200 OK in 38ms (Views: 29.4ms | ActiveRecord: 0.6ms | Allocations: 9449)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:47:40 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 8819)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.7ms | Allocations: 10511)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:42 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 7766)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 9470)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:47:43 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 8819)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 10520)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:47:43 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 7788)
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 9454)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:48:05 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 8856)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 10556)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:48:18 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 8819)
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 0.9ms | Allocations: 10526)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:22 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 7766)
+Completed 200 OK in 30ms (Views: 18.5ms | ActiveRecord: 0.6ms | Allocations: 9441)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:23 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 8584)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.5ms | Allocations: 10298)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:25 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 7766)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.1ms | Allocations: 9476)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:26 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.7ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 8584)
+Completed 200 OK in 31ms (Views: 22.0ms | ActiveRecord: 1.3ms | Allocations: 10299)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:26 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 7770)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 9483)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:27 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.9ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.3ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 8608)
+Completed 200 OK in 32ms (Views: 22.8ms | ActiveRecord: 1.5ms | Allocations: 10307)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:27 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.8ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7766)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.3ms | Allocations: 9452)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:28 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.5ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 8584)
+Completed 200 OK in 35ms (Views: 22.4ms | ActiveRecord: 1.1ms | Allocations: 10268)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:29 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 7766)
+Completed 200 OK in 22ms (Views: 14.4ms | ActiveRecord: 0.6ms | Allocations: 9443)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:29 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 8584)
+Completed 200 OK in 29ms (Views: 20.6ms | ActiveRecord: 1.1ms | Allocations: 10283)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:30 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 7766)
+Completed 200 OK in 27ms (Views: 19.4ms | ActiveRecord: 0.6ms | Allocations: 9446)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:30 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.3ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 8593)
+Completed 200 OK in 20ms (Views: 13.1ms | ActiveRecord: 0.6ms | Allocations: 10304)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:32 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 7766)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 9461)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:33 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.8ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 8584)
+Completed 200 OK in 29ms (Views: 19.2ms | ActiveRecord: 1.3ms | Allocations: 10274)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:48:33 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.3ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 7766)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 9476)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:34 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 7766)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 9461)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-12-22 18:48:35 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 7766)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 9464)
+
+
+Started GET "/reports" for 127.0.0.1 at 2022-12-22 18:48:35 +0300
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mReport Load (0.6ms)[0m  [1m[34mSELECT "reports".* FROM "reports" ORDER BY "reports"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/reports/index.html.erb:14
+  Rendered reports/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 840)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 299)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 8584)
+Completed 200 OK in 27ms (Views: 17.8ms | ActiveRecord: 1.1ms | Allocations: 10274)
+
+
+Started GET "/customers" for 127.0.0.1 at 2022-12-22 18:48:41 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:16
+  Rendered customers/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1060)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 8933)
+Completed 200 OK in 34ms (Views: 24.8ms | ActiveRecord: 1.2ms | Allocations: 10641)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-12-22 18:48:41 +0300
+Processing by AboutController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 7802)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 9496)
+
+
