@@ -406,6 +406,7 @@
     font-weight: 300;
     line-height: 1.2;
   }
+
   
   .display-3 {
     font-size: 4.5rem;
@@ -6682,15 +6683,23 @@
   }
 
   .dark-bg {
-    background-image: linear-gradient(rgba(255,255,255, .9), rgba(255,255,255, .9));
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    border-radius: 20px;
+    width:  85%;
+    margin: 2rem;
   }
 
-  .dark-bg {
-    height: 30vh;
-  }
+  #hero .container {
+    height: 40vh;
+
+}
+
+.generic{
+  padding: 100px 0;
+}
   
   .d-inline-flex {
     display: inline-flex !important;
@@ -9782,6 +9791,7 @@
     }
     .container {
       min-width: 992px !important;
+      
     }
     .navbar {
       display: none;
