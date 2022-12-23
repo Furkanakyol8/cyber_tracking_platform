@@ -1,31 +1,36 @@
-<div class="w-100">
-  <table class="table m-5 text-justify: inter-character">
-    <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Title</th>
-      <th scope="col">Description</th>
-      <th scope="col">  </th>
-    </tr>
-    </thead>
-    <tbody>
-    
 
-    <% @reports.first(10).each do |report| %>
-      <tr>
-        <th><%= report.id %></th>
-        <td><%= report.title %></td>
-        <td class="col-2"><%= report.description %></td>
-        <td><button type="button" class="btn btn-light"> <%= link_to "Show this report", report %></button></td>
-      </tr>
-    <% end %>
-    </tbody>
-  </table>
-<%= link_to "New report", new_report_path %>
+<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
+  <div class="d-grid justify-content-md-end">
+    <button class="btn btn-light me-md-2" type="button"><%= link_to "New Report", new_report_path%></button>
+  </div>
+    <div class="d-grid place-items-start h-100">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-hover table-bordered">
+              <thead class="table-active">
+              <tr class="lead">
+              <th scope="row" class="text-primary lead col-1 "><b>#</b></th>
+              <th scope="row" class="text-primary lead col-2 "><b>Title</b></th>
+              <th scope="row" class="text-primary lead col-5 "><b>Description</b></th>
+              <th scope="row" class="text-primary lead col-1 "> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @reports.first(10).each do |report| %>
+              <tr>
+                <th><%= report.id %></th>
+                <td><%= report.title %></td>
+                <td class="col-2"><%= report.description %></td>
+                <td><button type="button" class="btn btn-light"> <%= link_to "Show", report %></button></td>
+              </tr>
+              <% end %>
+            </tbody>
+            </table>
+          </div>
+        
+        </div>
 
-  <td><button type="button" class="btn btn-light"><%= link_to "New Report", new_report_path%></button></td>
-
-</div>
-
-
- 
+      </div>
+    </div>
+ </div>

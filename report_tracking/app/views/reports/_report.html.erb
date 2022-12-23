@@ -1,13 +1,32 @@
-<div id="<%= dom_id report %>">
-  <p>
-    <strong>Title:</strong>
-    <%= report.title %>
-  </p>
+<div>
+ <table class="table table m-5 text-justify: inter-character">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
 
-  <p>
-    <strong>Description:</strong>
-    <%= report.description %>
-  </p>
 
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><%= report.title %></td>
+      <td><%= report.description %></td>
+     
+    </tr>
+    </table>
+   <div class="d-grid gap-3 col-6 mx-auto">
+      <button class="btn btn-light" type="button"> <%= link_to "Edit this report", edit_report_path(@report) %> </button>
+      <button class="btn btn-light" type="button"> <%= link_to "Back to reports", reports_path %> </button>
+      <button type="button" class="btn btn-light"><%= button_to "Destroy this report", @report, method: :delete %></button>
+  </div>
 </div>
 
+
+
+
+
+   

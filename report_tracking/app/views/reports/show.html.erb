@@ -2,11 +2,3 @@
 
 <%= render @report %>
 
-
-
-<div>
-  <td><button type="button" class="btn btn-light"> <%= link_to "Edit this report", edit_report_path(@report) %></button></td>
-  <td><button type="button" class="btn btn-light"><%= link_to "Back to reports", reports_path %></button></td>
-
-  <td><button type="button" class="btn btn-light"><%= button_to "Destroy this report", @report, method: :delete %></button></td>
-</div>

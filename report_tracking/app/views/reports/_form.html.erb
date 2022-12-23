@@ -1,5 +1,5 @@
 
-<div class="d-grid place-items-center h-90">
+<div class="d-grid place-items-center h-50 ">
   
   <%= form_with(model: report) do |form| %>
   <% if report.errors.any? %>
@@ -23,9 +23,10 @@
       <%= form.text_area :description, class:"form-control" %>
     </div>
 
-    <div>
-      <%= form.submit %>
-    </div>
+    
+      <%= form.submit class:"btn btn-primary mt-5" %>
+      
+    
   <% end %>
 </div>
 
