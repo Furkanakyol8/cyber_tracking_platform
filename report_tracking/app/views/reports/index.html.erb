@@ -1,7 +1,8 @@
 
 <div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
   <div class="d-grid justify-content-md-end">
-    <button class="btn btn-light me-md-2" type="button"><%= link_to "New Report", new_report_path%></button>
+    <%= button_to "New Report", new_report_path, method: :get, class:"btn btn-light mb-2" %></button>
+    
   </div>
     <div class="d-grid place-items-start h-100">
       <div class="container text-center">
@@ -22,7 +23,8 @@
                 <th><%= report.id %></th>
                 <td><%= report.title %></td>
                 <td class="col-2"><%= report.description %></td>
-                <td><button type="button" class="btn btn-light"> <%= link_to "Show", report %></button></td>
+                <td><%= button_to "Show", report, method: :get, class:"btn btn-light mb-2" %></td>
+                
               </tr>
               <% end %>
             </tbody>

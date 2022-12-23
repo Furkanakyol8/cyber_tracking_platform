@@ -1,29 +1,45 @@
-<div class="w-100">
-  <table class="table m-5">
-    <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">User Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Company Info</th>
-    </tr>
-    </thead>
-    <tbody>
+<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
+  <div class="d-grid place-items-start h-100">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-hover table-bordered">
+                <thead class="table-active">
+                <tr class="lead">
+                <th scope="row" class="text-primary lead  "><b>#</b></th>
+                <th scope="row" class="text-primary lead  "><b>First Name</b></th>
+                <th scope="row" class="text-primary lead  "><b>Last Name</b></th>
+                <th scope="row" class="text-primary lead  "><b>User Name</b></th>
+                <th scope="row" class="text-primary lead col-4 "><b>Email</b></th>
+                <th scope="row" class="text-primary lead col-3 "><b>Phone</b></th>
+                <th scope="row" class="text-primary lead  "><b>Company Info</b></th>
+                </tr>
+              </thead>
+              <tbody>
 
-    <% @users.first(10).each do |user| %>
-      <tr>
-        <th><%= user.id %></th>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
-        <td><%= user.username %></td>
-        <td><%= user.email %></td>
-        <td><%= user.phone %></td>
-        <td><%= user.company_info %></td>
-      </tr>
-    <% end %>
-    </tbody>
-  </table>
+              <% @users.first(10).each do |user| %>
+
+                <tr>
+                  <th scope="row" class="text-primary lead col-1 "><%= user.id %> </th>
+                  
+                  <td class="col-2"><%= user.first_name %></td>
+                  <td class="col-2"><%= user.last_name %></td>
+                  <td class="col-2"><%= user.username %></td>
+                  <td class="col-2"><%= user.email %></td>
+                  <td class="col-2"><%= user.phone %></td>
+                  <td class="col-2"><%= user.company_info %></td>
+
+                  
+                </tr>
+              <% end %>
+              </tbody>
+              </table>
+            </div>
+          
+          </div>
+
+        </div>
+  </div>
 </div>
+
+

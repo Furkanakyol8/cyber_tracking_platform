@@ -1,11 +1,12 @@
-<h1>New report</h1>
 
-<%= render "form", report: @report %>
+<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
+    <%= render "form", report: @report %>
 
-<br>
-
-<div>
+    <br>
+    <div class="d-grid col-md-2 mx-auto">
  
-    <td><button type="button" class="btn btn-light"> <%= link_to "Back to reports", reports_path %></button></td>
+        <td><%= button_to "Back to reports", reports_path, method: :get, class:"btn btn-light" %></td>
+        
 
+    </div>
 </div>
