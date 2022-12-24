@@ -1,16 +1,8 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, only: [:index, :show]
-  before_action :authorization_check, only: [:new, :create, :destroy, :update]
-  # before_action :current_user == "member", only: %i[:index, :show]
+  # before_action :authorization_check, only: [:new, :create, :destroy, :update]
 
-  def authorization_check
-    # If either one of them is true this filter won’t do anything, allowing the requested user registration form to be rendered
-    if current_user.role != "admin" # checking if there are either zero registered users OR if there is a user already logged in
-      redirect_to root_path # if neither are true, then redirect to root_path and return false
-      return false
-    end
-  end
 
   # GET /reports or /reports.json
   def index
@@ -33,7 +25,7 @@ class ReportsController < ApplicationController
   # POST /reports or /reports.json
   def create
     @report = Report.new(report_params)
-
+    authorize(@report)
     respond_to do |format|
       if @report.save
         format.html { redirect_to report_url(@report), notice: "Report was successfully created." }
@@ -47,6 +39,7 @@ class ReportsController < ApplicationController
 
   # PATCH/PUT /reports/1 or /reports/1.json
   def update
+    authorize(@report)
     respond_to do |format|
       if @report.update(report_params)
         format.html { redirect_to report_url(@report), notice: "Report was successfully updated." }
@@ -60,6 +53,7 @@ class ReportsController < ApplicationController
 
   # DELETE /reports/1 or /reports/1.json
   def destroy
+    authorize(@report)
     @report.destroy
 
     respond_to do |format|
@@ -69,17 +63,12 @@ class ReportsController < ApplicationController
   end
 
 
-
-  def profile
-
-  end
-
-
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_report
       @report = Report.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      redirect_to reports_path
     end
 
 

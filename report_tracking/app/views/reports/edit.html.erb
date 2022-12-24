@@ -1,10 +1,14 @@
-<h1>Editing report</h1>
 
-<%= render "form", report: @report %>
+<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
+    <%= render "form", report: @report %>
 
-<br>
+    <br>
 
-<div>
-  <%= link_to "Show this report", @report %> |
-  <%= link_to "Back to reports", reports_path %>
+  <div class="d-grid col-md-2 mx-auto ">
+    <%= button_to "Show this report", @report, method: :get, class:"btn btn-light mb-2" %>
+    <%= button_to "Back to reports", reports_path, method: :get, class:"btn btn-light mb-2" %>
+    
+  </div>
 </div>
+
+ 

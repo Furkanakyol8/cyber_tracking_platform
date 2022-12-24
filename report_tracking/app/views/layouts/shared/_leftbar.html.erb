@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fa-solid fa-folder"></i>
                 </div>
@@ -14,10 +14,11 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fa-solid fa-folder"></i>
-                    <span>Ana Sayfa</span></a>
-            </li>
+                <%= link_to home_path, class: "nav-link" do %>
+                    <i class="fa-solid fa-house"></i> Ana Sayfa
+                <% end %>
+             </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -27,24 +28,21 @@
                 Bilgiler
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" 
-                    aria-expanded="true" aria-controls="collapseTwo">
-                   <i class="fa-solid fa-folder"></i>
-                    <span>Müşteri</span>
-                </a>
-                
-            </li>
+
+            <% if current_user.admin? %>
+                <li class="nav-item">
+                    <%= link_to customers_path, class: "nav-link collapsed" do %>
+                        <i class="fa-solid fa-users"></i> Müşteri Tablosu
+                    <% end %>
+                </li>
+            <% end %>
+
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" 
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fa-solid fa-folder"></i>
-                    <span>Şirket</span>
-                </a>
-               
+               <%= link_to about_path, class: "nav-link collapsed" do %>
+                       <i class="fa-solid fa-address-card"></i> Hakkımızda
+                <% end %>
             </li>
 
             <!-- Divider -->
@@ -57,20 +55,19 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" 
-                    aria-expanded="true" aria-controls="collapsePages">
-                   <i class="fa-solid fa-folder"></i>
-                    <span>Rapor</span>
-                </a>
-                
+                <%= link_to reports_path, class: "nav-link collapsed" do %>
+                    <i class="fa-solid fa-file"></i> Raporlarım
+                <% end %>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fa-solid fa-folder"></i>
-                    <span>Hizmet</span></a>
+                <%= link_to services_path, class: "nav-link" do %>
+                   <i class="fa-solid fa-shield-halved"></i> Hizmetler
+                <% end %>
             </li>
+
+            
              <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
