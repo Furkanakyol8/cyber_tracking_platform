@@ -7,12 +7,13 @@
                 <thead class="table-active">
                 <tr class="lead">
                 <th scope="row" class="text-primary lead  "><b>#</b></th>
-                <th scope="row" class="text-primary lead  "><b>First Name</b></th>
-                <th scope="row" class="text-primary lead  "><b>Last Name</b></th>
-                <th scope="row" class="text-primary lead  "><b>User Name</b></th>
+                <th scope="row" class="text-primary lead  "><b>İsim</b></th>
+                <th scope="row" class="text-primary lead  "><b>Soyisim</b></th>
+                <th scope="row" class="text-primary lead  "><b>Kullanıcı Adı</b></th>
                 <th scope="row" class="text-primary lead col-4 "><b>Email</b></th>
-                <th scope="row" class="text-primary lead col-3 "><b>Phone</b></th>
-                <th scope="row" class="text-primary lead  "><b>Company Info</b></th>
+                <th scope="row" class="text-primary lead col-3 "><b>Telefon</b></th>
+                <th scope="row" class="text-primary lead  "><b>Şirket Bilgisi</b></th>
+                <th scope="row" class="text-primary lead  "><b>Update</b></th>
                 </tr>
               </thead>
               <tbody>
@@ -28,6 +29,7 @@
                   <td class="col-2"><%= user.email %></td>
                   <td class="col-2"><%= user.phone %></td>
                   <td class="col-2"><%= user.company_info %></td>
+                  <td class="col-2"><%= button_to "Düzenle", edit_customer_path(user.id), method: :get, class:"btn btn-light mb-2" %></td>
 
                   
                 </tr>
