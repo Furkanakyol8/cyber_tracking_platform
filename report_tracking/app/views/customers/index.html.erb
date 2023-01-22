@@ -14,6 +14,7 @@
                 <th scope="row" class="text-primary lead col-3 "><b>Telefon</b></th>
                 <th scope="row" class="text-primary lead  "><b>Şirket Bilgisi</b></th>
                 <th scope="row" class="text-primary lead  "><b>Update</b></th>
+                <th scope="row" class="text-primary lead  "><b>Rapor</b></th>
                 </tr>
               </thead>
               <tbody>
@@ -30,6 +31,7 @@
                   <td class="col-2"><%= user.phone %></td>
                   <td class="col-2"><%= user.company_info %></td>
                   <td class="col-2"><%= button_to "Düzenle", edit_customer_path(user.id), method: :get, class:"btn btn-light mb-2" %></td>
+                  <td class="col-2"><%= button_to "Rapor Ekle", new_report_path(user.id), method: :get, class:"btn btn-light mb-2"%></td>
 
                   
                 </tr>
