@@ -19704,3 +19704,4 @@ Processing by AboutController#index as HTML
 Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 9496)
 
 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
