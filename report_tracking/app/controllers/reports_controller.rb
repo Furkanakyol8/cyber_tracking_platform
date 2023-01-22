@@ -6,7 +6,7 @@ class ReportsController < ApplicationController
 
   # GET /reports or /reports.json
   def index
-    @reports = Report.all
+    @reports = Report.where(user_id: current_user.id)
   end
 
   # GET /reports/1 or /reports/1.json
@@ -25,11 +25,13 @@ class ReportsController < ApplicationController
   # POST /reports or /reports.json
   def create
     @report = Report.new(report_params)
+
     authorize(@report)
     respond_to do |format|
       if @report.save
         format.html { redirect_to report_url(@report), notice: "Report was successfully created." }
         format.json { render :show, status: :created, location: @report }
+
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @report.errors, status: :unprocessable_entity }

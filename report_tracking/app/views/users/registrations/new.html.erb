@@ -4,7 +4,7 @@
 
         <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
-                <!-- Nested Row within Card Body -->
+               
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="p-5">
@@ -16,24 +16,24 @@
                             
                             <div class="form-group row">
                               <div class="col-sm-6 mb-3 mb-sm-0">
-                                <%= f.text_field :first_name, class:"form-control form-control-user", placeholder: "First Name" %>
+                                <%= f.text_field :first_name, class:"form-control form-control-user", placeholder: "İsim" %>
                               </div>
 
                               <div class="col-sm-6">
-                                <%= f.text_field :last_name, class:"form-control form-control-user", placeholder: "Last Name"%>
+                                <%= f.text_field :last_name, class:"form-control form-control-user", placeholder: "Soyisim"%>
                               </div>
                             </div>
 
                               <div class="form-group">
-                                <%= f.text_field :phone, class:"form-control form-control-user", placeholder: "Phone" %>
+                                <%= f.text_field :phone, class:"form-control form-control-user", placeholder: "Telefon" %>
                               </div>
 
                               <div class="form-group">
-                                <%= f.text_field :username, class:"form-control form-control-user", placeholder: "Username" %>
+                                <%= f.text_field :username, class:"form-control form-control-user", placeholder: "Kullanıcı Adı" %>
                               </div>
 
                               <div class="form-group">
-                                <%= f.text_area :company_info, class:"form-control form-control-user", placeholder: "Company İnfo" %>
+                                <%= f.text_area :company_info, class:"form-control form-control-user", placeholder: "Şirket Bilgisi" %>
                               </div>
 
                               <div class="form-group">
@@ -42,22 +42,22 @@
                               
                             <div class="form-group">
                               <% if @minimum_password_length %>
-                                <em>(<%= @minimum_password_length %> characters minimum)</em>
+                                <em>(<%= @minimum_password_length %> Karakter En Az)</em>
                                 <% end %><br />
                              <div class="row">
                               <div class="col-sm-6 mb-3 mb-sm-0">
-                                <%= f.password_field :password, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Password" %>
+                                <%= f.password_field :password, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Şifre" %>
                               </div>
 
                               <div class="col-sm-6">
                               
-                                <%= f.password_field :password_confirmation, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Confirm Password" %>
+                                <%= f.password_field :password_confirmation, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Şifre(Yeniden)" %>
                               </div>
                              </div>
                             </div>  
 
                               <div class="actions">
-                                <%= f.submit "Sign up", class:"btn btn-primary btn-user btn-block" %>
+                                <%= f.submit "Kayıt ol", class:"btn btn-primary btn-user btn-block" %>
                               </div>
                             <% end %>
 

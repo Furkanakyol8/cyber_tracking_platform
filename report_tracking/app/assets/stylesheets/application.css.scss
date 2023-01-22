@@ -12,9 +12,14 @@
  *
  *= require_tree .
  *= require_self
+ *= require dataTables/jquery.dataTables
+ *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
  */
 @import "font-awesome";
- 
+@import "dataTables.bootstrap5.min.css";
+@import "bootstrap.min.css";
+
+
 
 
 

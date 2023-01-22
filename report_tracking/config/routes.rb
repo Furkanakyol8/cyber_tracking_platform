@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users, sign_out_via: [:get, :post]
-
+  resources :customers
   resources :reports
   root to: "home#index"
   get 'about', to: 'about#index'

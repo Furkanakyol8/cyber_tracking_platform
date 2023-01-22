@@ -26,9 +26,13 @@
           
           </div>
             <div class="d-grid col-md-2 mx-auto ">
-              <%= button_to "Edit this report", edit_report_path(@report), method: :get, class:"btn btn-light mb-2" %>
-              <%= button_to "Back to reports", reports_path, method: :get, class:"btn btn-light mb-3" %>
-              <%= button_to "Destroy this report", @report, method: :delete,  class:"btn btn-light mb-2" %>
+              <% if  current_user.admin?%>
+                <%= button_to "Raporu Sil", @report, method: :delete,  class:"btn btn-light mb-2" %>
+                <%= button_to "Raporu Düzenle", edit_report_path(@report), method: :get, class:"btn btn-light mb-2" %>
+                <%= button_to "Raporlara Geri Dön", reports_path, method: :get, class:"btn btn-light mb-3" %>
+              <% else %>
+                <%= button_to "Raporlara Geri Dön", reports_path, method: :get, class:"btn btn-light mb-3" %>
+              <% end %>
               
             </div> 
 

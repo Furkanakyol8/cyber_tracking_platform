@@ -1,45 +1,71 @@
 <div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
-  <div class="d-grid place-items-start h-100">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-md-12">
-              <table class="table table-hover table-bordered">
-                <thead class="table-active">
-                <tr class="lead">
-                <th scope="row" class="text-primary lead  "><b>#</b></th>
-                <th scope="row" class="text-primary lead  "><b>First Name</b></th>
-                <th scope="row" class="text-primary lead  "><b>Last Name</b></th>
-                <th scope="row" class="text-primary lead  "><b>User Name</b></th>
-                <th scope="row" class="text-primary lead col-4 "><b>Email</b></th>
-                <th scope="row" class="text-primary lead col-3 "><b>Phone</b></th>
-                <th scope="row" class="text-primary lead  "><b>Company Info</b></th>
-                </tr>
-              </thead>
-              <tbody>
+	<div class="d-grid place-items-start h-100">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="search">Arama:</label>
+						<input type="text" class="form-control" id="search" onkeyup="searchFunction()" />
+					</div>
 
-              <% @users.first(10).each do |user| %>
+					<table id="myTable" class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="row" class="text-primary lead"><b>#</b></th>
+								<th scope="row" class="text-primary lead"><b>İsim</b></th>
+								<th scope="row" class="text-primary lead"><b>Soyisim</b></th>
+								<th scope="row" class="text-primary lead"><b>Kullanıcı Adı</b></th>
+								<th scope="row" class="text-primary lead col-4"><b>Email</b></th>
+								<th scope="row" class="text-primary lead col-3"><b>Telefon</b></th>
+								<th scope="row" class="text-primary lead"><b>Şirket Bilgisi</b></th>
+								<th scope="row" class="text-primary lead"><b>Update</b></th>
+								<th scope="row" class="text-primary lead"><b>Rapor</b></th>
+							</tr>
+						</thead>
+						<tbody>
+							<% @users.first(10).each do |user| %>
 
-                <tr>
-                  <th scope="row" class="text-primary lead col-1 "><%= user.id %> </th>
-                  
-                  <td class="col-2"><%= user.first_name %></td>
-                  <td class="col-2"><%= user.last_name %></td>
-                  <td class="col-2"><%= user.username %></td>
-                  <td class="col-2"><%= user.email %></td>
-                  <td class="col-2"><%= user.phone %></td>
-                  <td class="col-2"><%= user.company_info %></td>
+							<tr>
+								<th scope="row" class="text-primary lead col-1"><%= user.id %></th>
 
-                  
-                </tr>
-              <% end %>
-              </tbody>
-              </table>
-            </div>
-          
-          </div>
+								<td class="col-2"><%= user.first_name %></td>
+								<td class="col-2"><%= user.last_name %></td>
+								<td class="col-2"><%= user.username %></td>
+								<td class="col-2"><%= user.email %></td>
+								<td class="col-2"><%= user.phone %></td>
+								<td class="col-2"><%= user.company_info %></td>
+								<td class="col-2"><%= button_to "Düzenle", edit_customer_path(user.id), method: :get, class:"btn btn-light mb-2" %></td>
+								<td class="col-2"><%= button_to "Rapor Ekle", new_report_path(user.id), method: :get, class:"btn btn-light mb-2"%></td>
+							</tr>
+							<% end %>
+						</tbody>
+					</table>
 
-        </div>
-  </div>
+					<script>
+						function searchFunction() {
+						  // Arama yeri alınır
+						  var input, filter, table, tr, td, i, txtValue;
+						  input = document.getElementById("search");
+						  filter = input.value.toUpperCase();
+						  table = document.getElementById("myTable");
+						  tr = table.getElementsByTagName("tr");
+
+						  // Tüm satırlar gezilir
+						  for (i = 0; i < tr.length; i++) {
+						    td = tr[i].getElementsByTagName("td")[0];
+						    if (td) {
+						      txtValue = td.textContent || td.innerText;
+						      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						        tr[i].style.display = "";
+						      } else {
+						        tr[i].style.display = "none";
+						      }
+						    }
+						  }
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
-

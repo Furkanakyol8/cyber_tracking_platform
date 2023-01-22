@@ -2,15 +2,15 @@
   <div class = "list-group-horizontal ">
     <ul class="list-group  ">
 
-      <li class="list-group-item">Full name : <%= current_user.full_name %></li>
-      <li class="list-group-item">Phone: <%= current_user.phone %></li>
-      <li class="list-group-item">Company Info: <%= current_user.company_info %></li>
+      <li class="list-group-item">İsim ve Soyisim : <%= current_user.full_name %></li>
+      <li class="list-group-item">Telefon: <%= current_user.phone %></li>
+      <li class="list-group-item">Şirket Bilgisi: <%= current_user.company_info %></li>
       <li class="list-group-item">Email: <%= current_user.email %></li>
-      <li class="list-group-item">Username: <%= current_user.username %></li>
+      <li class="list-group-item">Kullanıcı Adı: <%= current_user.username %></li>
     </ul>
   </div>
 </div>
  
 <div class="d-grid col-md-2 mx-auto">
-  <%= button_to "Edit Profile", edit_user_registration_path(current_user), method: :get, class:"btn btn-primary mb-5" %>
+  <%= button_to "Profil Bilgilerini Düzenle", edit_user_registration_path(current_user), method: :get, class:"btn btn-primary mb-5" %>
 </div>
