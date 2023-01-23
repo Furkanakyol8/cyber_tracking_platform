@@ -1,88 +1,59 @@
-
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+	<a class="sidebar-brand d-flex align-items-center justify-content-center">
+		<div class="sidebar-brand-icon rotate-n-15">
+			<i class="fa-solid fa-folder"></i>
+		</div>
+		<div class="sidebar-brand-text mx-3">Rapor Takip<sup></sup></div>
+	</a>
 
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fa-solid fa-folder"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Rapor Takip<sup></sup></div>
-            </a>
+	<hr class="sidebar-divider my-0" />
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+	<li class="nav-item active">
+		<%= link_to home_path, class: "nav-link" do %>
+		<i class="fa-solid fa-house"></i> Ana Sayfa <% end %>
+	</li>
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <%= link_to home_path, class: "nav-link" do %>
-                    <i class="fa-solid fa-house"></i> Ana Sayfa
-                <% end %>
-             </li>
+	<hr class="sidebar-divider" />
 
+	<div class="sidebar-heading">
+		Bilgiler
+	</div>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+	<% if current_user.admin? %>
+	<li class="nav-item">
+		<%= link_to customers_path, class: "nav-link collapsed" do %>
+		<i class="fa-solid fa-users"></i> Müşteri Tablosu <% end %>
+	</li>
+	<% end %>
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Bilgiler
-            </div>
+	<li class="nav-item">
+		<%= link_to about_path, class: "nav-link collapsed" do %>
+		<i class="fa-solid fa-address-card"></i> Hakkımızda <% end %>
+	</li>
 
+	<hr class="sidebar-divider" />
 
-            <% if current_user.admin? %>
-                <li class="nav-item">
-                    <%= link_to customers_path, class: "nav-link collapsed" do %>
-                        <i class="fa-solid fa-users"></i> Müşteri Tablosu
-                    <% end %>
-                </li>
-            <% end %>
+	<div class="sidebar-heading">
+		İşlemler
+	</div>
 
+	<li class="nav-item">
+		<%= link_to reports_path, class: "nav-link collapsed" do %>
+		<i class="fa-solid fa-file"></i> Raporlarım <% end %>
+	</li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-               <%= link_to about_path, class: "nav-link collapsed" do %>
-                       <i class="fa-solid fa-address-card"></i> Hakkımızda
-                <% end %>
-            </li>
+	<li class="nav-item">
+		<%= link_to services_path, class: "nav-link" do %>
+		<i class="fa-solid fa-shield-halved"></i> Hizmetler <% end %>
+	</li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+	<hr class="sidebar-divider d-none d-md-block" />
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                İşlemler
-            </div>
+	<li class="nav-item">
+		<%= link_to destroy_user_session_path, :method => :delete, class: "nav-link" do %>
+		<i class="fa-solid fa-right-from-bracket"></i> <span>Çıkış Yap</span>
+		<% end %>
+	</li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <%= link_to reports_path, class: "nav-link collapsed" do %>
-                    <i class="fa-solid fa-file"></i> Raporlarım
-                <% end %>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <%= link_to services_path, class: "nav-link" do %>
-                   <i class="fa-solid fa-shield-halved"></i> Hizmetler
-                <% end %>
-            </li>
-
-            
-             <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            
-            
-             <li class="nav-item">
-                <%= link_to destroy_user_session_path, :method => :delete, class: "nav-link" do %>
-                 <i class="fa-solid fa-right-from-bracket"></i> <span>Çıkış Yap</span>
-               <% end %>
-
-            </li>
-
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-           
-
-        </ul>
+	<hr class="sidebar-divider d-none d-md-block" />
+</ul>

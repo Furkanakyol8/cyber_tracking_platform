@@ -1,82 +1,72 @@
 <body class="bg-gradient-primary">
+	<div class="container">
+		<div class="card o-hidden border-0 shadow-lg my-5">
+			<div class="card-body p-0">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="p-5">
+							<div class="text-center">
+								<h1 class="h4 text-gray-900 mb-4">Sign Up</h1>
+							</div>
+							<%= form_for(resource, as: resource_name, :html => {:class => 'user'}, url: registration_path(resource_name)) do |f| %> <%= render "users/shared/error_messages", resource: resource %>
 
-    <div class="container">
+							<div class="form-group row">
+								<div class="col-sm-6 mb-3 mb-sm-0">
+									<%= f.text_field :first_name, class:"form-control form-control-user", placeholder: "İsim" %>
+								</div>
 
-        <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-0">
-               
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="p-5">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Sign Up</h1>
-                            </div>
-                            <%= form_for(resource, as: resource_name, :html => {:class => 'user'}, url: registration_path(resource_name)) do |f| %>
-                              <%= render "users/shared/error_messages", resource: resource %>
-                            
-                            <div class="form-group row">
-                              <div class="col-sm-6 mb-3 mb-sm-0">
-                                <%= f.text_field :first_name, class:"form-control form-control-user", placeholder: "İsim" %>
-                              </div>
+								<div class="col-sm-6">
+									<%= f.text_field :last_name, class:"form-control form-control-user", placeholder: "Soyisim"%>
+								</div>
+							</div>
 
-                              <div class="col-sm-6">
-                                <%= f.text_field :last_name, class:"form-control form-control-user", placeholder: "Soyisim"%>
-                              </div>
-                            </div>
+							<div class="form-group">
+								<%= f.text_field :phone, class:"form-control form-control-user", placeholder: "Telefon" %>
+							</div>
 
-                              <div class="form-group">
-                                <%= f.text_field :phone, class:"form-control form-control-user", placeholder: "Telefon" %>
-                              </div>
+							<div class="form-group">
+								<%= f.text_field :username, class:"form-control form-control-user", placeholder: "Kullanıcı Adı" %>
+							</div>
 
-                              <div class="form-group">
-                                <%= f.text_field :username, class:"form-control form-control-user", placeholder: "Kullanıcı Adı" %>
-                              </div>
+							<div class="form-group">
+								<%= f.text_area :company_info, class:"form-control form-control-user", placeholder: "Şirket Bilgisi" %>
+							</div>
 
-                              <div class="form-group">
-                                <%= f.text_area :company_info, class:"form-control form-control-user", placeholder: "Şirket Bilgisi" %>
-                              </div>
+							<div class="form-group">
+								<%= f.email_field :email, class:"form-control form-control-user", autocomplete: "email", placeholder: "Email" %>
+							</div>
 
-                              <div class="form-group">
-                                <%= f.email_field :email, class:"form-control form-control-user", autocomplete: "email", placeholder: "Email" %>
-                              </div>
-                              
-                            <div class="form-group">
-                              <% if @minimum_password_length %>
-                                <em>(<%= @minimum_password_length %> Karakter En Az)</em>
-                                <% end %><br />
-                             <div class="row">
-                              <div class="col-sm-6 mb-3 mb-sm-0">
-                                <%= f.password_field :password, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Şifre" %>
-                              </div>
+							<div class="form-group">
+								<% if @minimum_password_length %>
+								<em>(<%= @minimum_password_length %> Karakter En Az)</em>
+								<% end %><br />
+								<div class="row">
+									<div class="col-sm-6 mb-3 mb-sm-0">
+										<%= f.password_field :password, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Şifre" %>
+									</div>
 
-                              <div class="col-sm-6">
-                              
-                                <%= f.password_field :password_confirmation, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Şifre(Yeniden)" %>
-                              </div>
-                             </div>
-                            </div>  
+									<div class="col-sm-6">
+										<%= f.password_field :password_confirmation, class:"form-control form-control-user", autocomplete: "new-password", placeholder: "Şifre(Yeniden)" %>
+									</div>
+								</div>
+							</div>
 
-                              <div class="actions">
-                                <%= f.submit "Kayıt ol", class:"btn btn-primary btn-user btn-block" %>
-                              </div>
-                            <% end %>
+							<div class="actions">
+								<%= f.submit "Kayıt ol", class:"btn btn-primary btn-user btn-block" %>
+							</div>
+							<% end %>
 
-                            <hr>
-                           
-                            <%= render "users/shared/links" %>
+							<hr />
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+							<%= render "users/shared/links" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    </div>
+	<h2>Sign up</h2>
 
-
-<h2>Sign up</h2>
-
-
-
-<%= render "users/shared/links" %>
- 
+	<%= render "users/shared/links" %>
+</body>

@@ -1,37 +1,22 @@
+<div class="d-grid place-items-center h-75">
+	<%= form_with(model: report) do |form| %> <% if report.errors.any? %>
+	<div style="color: red">
+		<h2><%= pluralize(report.errors.count, "error") %> prohibited this report from being saved:</h2>
 
-<div class="d-grid place-items-center h-75 ">
-  
-  <%= form_with(model: report) do |form| %>
-  <% if report.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(report.errors.count, "error") %> prohibited this report from being saved:</h2>
+		<ul>
+			<% report.errors.each do |error| %>
+			<li><%= error.full_message %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
+	<div>
+		<%= form.label :title, style: "display: block", class:"form-label" %> <%= form.text_field :title, class:"form-control" %>
+	</div>
 
-      <ul>
-        <% report.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-    <div>
-      <%= form.label :title, style: "display: block", class:"form-label" %>
-      <%= form.text_field :title, class:"form-control" %>
-    </div>
+	<div>
+		<%= form.label :description, style: "display: block" %> <%= form.text_area :description, class:"form-control" %>
+	</div>
 
-    <div>
-      <%= form.label :description, style: "display: block" %>
-      <%= form.text_area :description, class:"form-control" %>
-    </div>
-
-    
-      <%= form.submit class:"btn btn-primary mt-5" %>
-      
-    
-  <% end %>
+	<%= form.submit class:"btn btn-primary mt-5" %> <% end %>
 </div>
-
-
-
-
-
-

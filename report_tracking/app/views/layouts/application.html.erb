@@ -1,46 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Report Tracking</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+	<head>
+		<title>Report Tracking</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<%= csrf_meta_tags %> <%= csp_meta_tag %> <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> <%= stylesheet_link_tag "sb-admin2.min.css"%> <%= stylesheet_link_tag "chart.css"%> <%= javascript_importmap_tags %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	</head>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    
-    <%= stylesheet_link_tag "sb-admin2.min.css"%>
-    <%= stylesheet_link_tag "chart.css"%>
-    <%= javascript_importmap_tags %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
-  </head>
+	<body id="page-top">
+		<div id="wrapper">
+			<% if user_signed_in? %> <%= render 'layouts/shared/leftbar' %>
 
-  <body id="page-top">
-    <div id="wrapper">
-    <% if user_signed_in? %>
-      <%= render 'layouts/shared/leftbar' %>
-
-
-      <div id="content-wrapper" class="d-flex flex-column">
-
-        <!-- Main Content -->
-        <div id="content">
-        
-              <%= render 'layouts/shared/nav' %>
-            
-
-
-          <%= yield %>
-        
-        </div>
-      </div>
-   <% end %>
-    <% if !user_signed_in? %>
-          <%= yield %>
-
-   <% end %>
-
-    </div>
-
-
-  </body>
+			<div id="content-wrapper" class="d-flex flex-column">
+				
+				<div id="content">
+					<%= render 'layouts/shared/nav' %> <%= yield %>
+				</div>
+			</div>
+			<% end %> <% if !user_signed_in? %> <%= yield %> <% end %>
+		</div>
+	</body>
 </html>
