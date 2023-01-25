@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
 		<title>Report Tracking</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<%= csrf_meta_tags %> <%= csp_meta_tag %> <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> <%= stylesheet_link_tag "sb-admin2.min.css"%> <%= stylesheet_link_tag "chart.css"%> <%= javascript_importmap_tags %>
@@ -12,7 +13,9 @@
 			<% if user_signed_in? %> <%= render 'layouts/shared/leftbar' %>
 
 			<div id="content-wrapper" class="d-flex flex-column">
+
 				
+
 				<div id="content">
 					<%= render 'layouts/shared/nav' %> <%= yield %>
 				</div>

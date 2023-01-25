@@ -1,4 +1,11 @@
+
+<nav aria-label="breadcrumb">
+					<ol class="breadcrumb" style="margin: 0">
+						 <%= breadcrumb :home %> <%= breadcrumb :customers %>
+					</ol>
+</nav>
 <div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
+
 	<div class="d-grid place-items-start h-100">
 		<div class="container text-center">
 			<div class="row">
@@ -43,48 +50,47 @@
 					<div id="pagination"></div>
 
 					<script>
-					
-						function searchFunction() {
-    // Arama yeri alınır
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("search");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
 
-    // Tüm satırlar gezilir
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[1];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }
-    }
-  }
-					$(document).ready(function(){
-    $('#myTable').DataTable({
-		"paging" : true,
-        "pagingType": "full_numbers",
-        "lengthMenu": [5,10,15],
-        "bLengthChange": false,
-        "bFilter": true,
-        "language": {
-              "paginate": {
-                  "first": "İlk",
-                  "previous": "Önceki",
-                  "next": "Sonraki",
-                  "last": "Son"
-              },
-              "search": "Ara:",
-              "info": " TOTAL kayıttan START - END artırılıyor"
-}
-});
-});
+	function searchFunction() {
+	    // Arama yeri alınır
+	    var input, filter, table, tr, td, i, txtValue;
+	    input = document.getElementById("search");
+	    filter = input.value.toUpperCase();
+	    table = document.getElementById("myTable");
+	    tr = table.getElementsByTagName("tr");
 
+	    // Tüm satırlar gezilir
+	    for (i = 0; i < tr.length; i++) {
+	      td = tr[i].getElementsByTagName("td")[1];
+	      if (td) {
+	        txtValue = td.textContent || td.innerText;
+	        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+	          tr[i].style.display = "";
+	        } else {
+	          tr[i].style.display = "none";
+	        }
+	      }
+	    }
+	  }
+						$(document).ready(function(){
+	    $('#myTable').DataTable({
+			"paging" : true,
+	        "pagingType": "full_numbers",
+	        "lengthMenu": [5,10,15],
+	        "bLengthChange": false,
+	        "bFilter": true,
+	        "language": {
+	              "paginate": {
+	                  "first": "İlk",
+	                  "previous": "Önceki",
+	                  "next": "Sonraki",
+	                  "last": "Son"
+	              },
+	              "search": "Ara:",
+	              "info": " TOTAL kayıttan START - END artırılıyor"
+	}
+	});
+	});
 </script>
 
 				</div>
