@@ -5,6 +5,22 @@ module BreadcrumbHelper
       content_tag(:li, class: "breadcrumb-item") do
         link_to "Ana Sayfa", root_path
       end
+    when :edit_customer
+      content_tag(:li, class: "breadcrumb-item") do
+        link_to "Düzenle", edit_customer_path
+      end
+    when :edit_report
+      content_tag(:li, class: "breadcrumb-item") do
+        link_to "Rapor Düzenle", edit_report_path
+      end
+    when :new_report
+      content_tag(:li, class: "breadcrumb-item") do
+        link_to "Yeni Rapor",  new_report_path
+      end
+    when :edit_user_registration
+      content_tag(:li, class: "breadcrumb-item") do
+        link_to "Profil Düzenle", edit_user_registration_path(current_user)
+      end
     when :profiles
       content_tag(:li, class: "breadcrumb-item") do
         link_to "Profil", profile_path

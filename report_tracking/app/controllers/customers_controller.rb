@@ -2,7 +2,8 @@ class CustomersController < ApplicationController
   before_action :set_user, only: %i[ show edit update destroy]
   # before_action :authorization_check, except: []  # admin olmayan kullanıcı hiç bir şey yapamaz
   def index
-    @users = User.paginate(:page => params[:page], :per_page => 1)
+    # @users = User.paginate(:page => params[:page], :per_page => 1)
+    @users = User.all 
   end
 
   def edit

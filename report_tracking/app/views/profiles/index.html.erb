@@ -1,21 +1,42 @@
-<nav aria-label="breadcrumb" style="background-color: RGBA(	211,211,211, 0.3)">
+<nav aria-label="breadcrumb">
 					<ol class="breadcrumb" style="margin: 0">
 						 <%= breadcrumb :home %>  <%= breadcrumb :profiles %> 
 					</ol>
 </nav>
 
 
-	<div class="container mb-5" >
-		<div class="list-group-horizontal" >
-			<ul class="list-group">
-				<li class="list-group-item">İsim ve Soyisim : <%= current_user.full_name %></li>
-				<li class="list-group-item">Telefon: <%= current_user.phone %></li>
-				<li class="list-group-item">Şirket Bilgisi: <%= current_user.company_info %></li>
-				<li class="list-group-item">Email: <%= current_user.email %></li>
-				<li class="list-group-item">Kullanıcı Adı: <%= current_user.username %></li>
-			</ul>
-		</div>
-	</div>
+
+	<div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../../public/img/profil_foto.jpg" class="img-fluid mx-auto d-block rounded-circle border border-warning">
+                <h1 class="text-center"><%= current_user.full_name %></h1>
+                <p class="text-center">Kullanıcı</p>
+                <div class="text-center">
+                    <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1603087355&extra_1=s%7Cc%7C305038450781%7Ce%7Cfacebook%27%7C&placement=&creative=305038450781&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1603087355%26adgroupid%3D61834755758%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1012798%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI2p763qTn_AIVxfhRCh3Pcg2rEAAYASAAEgKIPvD_BwE" class="btn btn-primary">Facebook</a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B"requested_variant"%3A"eyJsYW5nIjoidHIifQ%3D%3D"%7D" class="btn btn-info">Twitter</a>
+                    <a href="https://tr.linkedin.com" class="btn btn-danger">LinkedIn</a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>Hakkımda</h2>
+                <p>Sivas cumhuriyet üniversitesi bilgisayar mühendisliği 4.sınıf 22 yaş ...</p>
+				<ul>
+                    <li><%= current_user.phone %></li>
+                    <li><%= current_user.username %></li>
+					<li><%= current_user.email %></li>
+                </ul>
+                <h2>Şirket Bilgileri</h2>
+                <ul>
+                    <li><%= current_user.company_info %></li>
+                    
+                    
+                </ul>
+                
+                
+            </div>
+        </div>
+    </div>
 
 	<div class="d-grid col-md-2 mx-auto">
 		<%= button_to "Profil Bilgilerini Düzenle", edit_user_registration_path(current_user), method: :get, class:"btn btn-primary mb-5" %>
