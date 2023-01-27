@@ -20,8 +20,8 @@
               
             </div>
             <div class="col-md-8">
-                <h1 class="text-primary font-weight-bold">Hakkımda</h1>
-                <p class="text-dark font-weight-bold font-italic">Sivas cumhuriyet üniversitesi bilgisayar mühendisliği 4.sınıf...</p>
+                <h1 class="text-primary font-weight-bold">Kişisel Bilgilerim</h1>
+                
 				<ul>
                     
                     <li class="text-dark font-weight-bold font font-italic="><%= current_user.username.capitalize %></li>
@@ -29,7 +29,7 @@
 					<li class="text-dark font-weight-bold font font-italic="><%= current_user.email %></li>
                     <li class="text-dark font-weight-bold font font-italic="><%= current_user.phone %></li>
                 </ul>
-                <h1 class="text-primary font-weight-bold">Şirket Bilgileri</h1>
+                <h1 class="text-primary font-weight-bold">Şirket Bilgilerim</h1>
                 <ul>
                     <li class="text-dark font-weight-bold font-italic"><%= current_user.company_info.capitalize %></li>
                     
@@ -37,7 +37,7 @@
                 </ul>
 
                   <div class="d-grid gap-2 d-md-flex justify-content-md-end my-5">
-		<%= button_to "Profil Bilgilerini Düzenle", edit_user_registration_path(current_user), method: :get, class:"btn btn-primary mb-5" %>
+		<%= button_to "Profil Bilgilerimi Düzenle", edit_user_registration_path(current_user), method: :get, class:"btn btn-primary mb-5" %>
 	</div>
                 
                 
