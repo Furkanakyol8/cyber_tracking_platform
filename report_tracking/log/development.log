@@ -31777,3 +31777,194 @@ Started GET "/public/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 11:42:01 +
   
 ActionController::RoutingError (No route matches [GET] "/public/img/profil_foto.jpg"):
   
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:20 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/vesile/privia/cyber_tracking_platform/report_tracking/app/controllers/application_controller.rb:5)
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1234)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 936)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.4ms | Allocations: 322)
+  Rendered layout layouts/application.html.erb (Duration: 149.8ms | Allocations: 87116)
+Completed 200 OK in 173ms (Views: 152.3ms | ActiveRecord: 2.8ms | Allocations: 118761)
+
+
+Started GET "/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:20 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:21 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 319)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 304)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 16570)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 18492)
+
+
+Started GET "/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:22 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 278)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 16003)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 17718)
+
+
+Started GET "/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:23 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 278)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 16003)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 17706)
+
+
+Started GET "/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:23 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 278)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 16001)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 17682)
+
+
+Started GET "/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:23 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 16410)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.3ms | Allocations: 18106)
+
+
+Started GET "/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:32 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 743)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.0ms | Allocations: 883)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.7ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 18415)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.3ms | Allocations: 20805)
+
+
+Started GET "/public/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:32 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 278)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.3ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 16001)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.3ms | Allocations: 17812)
+
+
+Started GET "/public/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:05:32 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 278)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 1.1ms | Allocations: 301)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 16001)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.3ms | Allocations: 17685)
+
+
+Started GET "/public/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:05:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/img/profil_foto.jpg"):
+  
+Started GET "/profile" for 127.0.0.1 at 2023-01-27 13:17:12 +0300
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering profiles/index.html.erb within layouts/application
+  Rendered profiles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 742)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.9ms | Allocations: 883)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.5ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 18075)
+Completed 200 OK in 26ms (Views: 14.8ms | ActiveRecord: 4.3ms | Allocations: 23414)
+
+
+Started GET "/public/img/profil_foto.jpg" for 127.0.0.1 at 2023-01-27 13:17:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/img/profil_foto.jpg"):
+  
+Started GET "/customers" for 127.0.0.1 at 2023-01-27 13:19:38 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:35
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2045)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.4ms | Allocations: 328)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 18426)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.6ms | Allocations: 21097)
+
+
+Started GET "/customers" for 127.0.0.1 at 2023-01-27 13:20:12 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/customers/index.html.erb:35
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2023)
+  Rendered layouts/shared/_leftbar.html.erb (Duration: 0.9ms | Allocations: 883)
+  Rendered layouts/shared/_nav.html.erb (Duration: 0.4ms | Allocations: 319)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 19353)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.7ms | Allocations: 21955)
+
+
