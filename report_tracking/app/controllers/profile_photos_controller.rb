@@ -1,0 +1,3 @@
+class ProfilePhotosController < ApplicationController
+ 
+end

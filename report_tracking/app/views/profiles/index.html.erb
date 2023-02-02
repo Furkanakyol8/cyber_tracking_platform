@@ -1,51 +1,111 @@
 <nav aria-label="breadcrumb">
-					<ol class="breadcrumb" style="margin: 0">
-						 <%= breadcrumb :home %>  <%= breadcrumb :profiles %> 
-					</ol>
+   <ol class="breadcrumb" style="margin: 0">
+      <%= breadcrumb :home %>  <%= breadcrumb :profiles %> 
+   </ol>
 </nav>
-
-
-<div class="d-flex justify-content-center">
-	<div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="/img/profil_foto.jpg.jpeg" class="img-fluid mx-auto d-block rounded-circle border border-warning">
-                <h1 class="text-center text-primary font-italic font-weight-bold my-3"><%= current_user.full_name.upcase %></h1>
-                <p class="text-center text-primary font-italic">Kullanıcı</p>
-                <div class="text-center my-5">
-                    <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1603087355&extra_1=s%7Cc%7C305038450781%7Ce%7Cfacebook%27%7C&placement=&creative=305038450781&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1603087355%26adgroupid%3D61834755758%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1012798%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI2p763qTn_AIVxfhRCh3Pcg2rEAAYASAAEgKIPvD_BwE" class="btn btn-primary">Facebook</a>
-                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B"requested_variant"%3A"eyJsYW5nIjoidHIifQ%3D%3D"%7D" class="btn btn-info">Twitter</a>
-                    <a href="https://tr.linkedin.com" class="btn btn-danger">LinkedIn</a>
-                </div>
-              
+<head>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div class="container">
+<div class="row profile">
+   <div class="col-md-3">
+      <div class="profile-sidebar" style="box-shadow: 0px 0px 10px #000000;">
+         <div class="profile-userpic">
+            <img src="/img/profil_foto.jpg.jpeg" class="img-fluid mx-auto d-block rounded-circle border border-warning">
+         </div>
+         <div class="profile-usertitle">
+            <h1 class="text-center text-primary font-italic font-weight-bold my-3"><%= current_user.full_name.upcase %></h1>
+         </div>
+         <div class="profile-userbuttons">
+         </div>
+         <div class="profile-usermenu">
+         </div>
+         <div class="portlet light bordered">
+            <div class="margin-top-20 profile-desc-link">
+               <i class="fa-brands fa-facebook"></i>
+               <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1603087355&extra_1=s%7Cc%7C305038450781%7Ce%7Cfacebook%27%7C&placement=&creative=305038450781&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1603087355%26adgroupid%3D61834755758%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1012798%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI2p763qTn_AIVxfhRCh3Pcg2rEAAYASAAEgKIPvD_BwE" class="btn btn-primary">Facebook</a>
             </div>
-            <div class="col-md-8">
-                <h1 class="text-primary font-weight-bold">Kişisel Bilgilerim</h1>
-                
-				<ul>
-                    
-                    <li class="text-dark font-weight-bold font font-italic="><%= current_user.username.capitalize %></li>
-                    <li class="text-dark font-weight-bold font font-italic="><%= current_user.last_name.upcase %></li>
-					<li class="text-dark font-weight-bold font font-italic="><%= current_user.email %></li>
-                    <li class="text-dark font-weight-bold font font-italic="><%= current_user.phone %></li>
-                </ul>
-                <h1 class="text-primary font-weight-bold">Şirket Bilgilerim</h1>
-                <ul>
-                    <li class="text-dark font-weight-bold font-italic"><%= current_user.company_info.capitalize %></li>
-                    
-                    
-                </ul>
-
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end my-5">
-		<%= button_to "Profil Bilgilerimi Düzenle", edit_user_registration_path(current_user), method: :get, class:"btn btn-primary mb-5" %>
-	</div>
-                
-                
-                
+            <div class="margin-top-20 profile-desc-link">
+               <i class="fa-brands fa-twitter"></i>
+               <a href="https://twitter.com/i/flow/login?input_flow_data=%7B"requested_variant"%3A"eyJsYW5nIjoidHIifQ%3D%3D"%7D" class="btn btn-info">Twitter</a>
             </div>
-        </div>
-    </div>
-    </div>
-
-	
-
+            <div class="margin-top-20 profile-desc-link">
+               <i class="fa-brands fa-linkedin"></i>
+               <a href="https://tr.linkedin.com" class="btn btn-danger">LinkedIn</a>
+            </div>
+         </div>
+         <div class="profile-usermenu">
+            <div class="d-grid gap-2 d-md-flex justify-content-center my-5">
+               <%= button_to "Profil Bilgilerimi Düzenle", edit_user_registration_path(current_user), method: :get, class:"btn btn-primary mb-5" %>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-9">
+      <div class="profile-content" style="box-shadow: 0px 0px 10px #000000;">
+         <h1 class="text-primary font-weight-bold">Kişisel Bilgilerim</h1>
+         <ul>
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <li class="text-dark font-weight-bold font-italic="><%= current_user.username.capitalize %></li>
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <li class="text-dark font-weight-bold font-italic="><%= current_user.last_name.upcase %></li>
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <li class="text-dark font-weight-bold font-italic="><%= current_user.email %></li>
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <li class="text-dark font-weight-bold font-italic="><%= current_user.phone %></li>
+         </ul>
+         <h1 class="text-primary font-weight-bold">Şirket Bilgilerim</h1>
+         <ul>
+            <i class="fa-sharp fa-solid fa-building"></i>
+            <li class="text-dark font-weight-bold font-italic"><%= current_user.company_info.capitalize %></li>
+         </ul>
+         <div class="container overflow-hidden text-center" style="margin-top: 50px;">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-10 col-md-6 mb-2">
+                     <div class="card-bodyy card border-left-infoo shadow h-100 py-2">
+                        <div class="card-bodyy">
+                           <div class="row no-gutters align-items-center">
+                              <div class="col mr-2">
+                                 <div class="text-xs font-weight-bold text-dark text-uppercase mb-1"> Yüklenen Rapor Sayısı</div>
+                                 <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                       <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><%= Report.count %></div>
+                                    </div>
+                                    <div class="col">
+                                       <div class="progress progress-sm mr-2">
+                                          <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-auto">
+                                 <i class="fa-solid fa-file"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-10 col-md-6 mb-2">
+                     <div class="card-bodyy card border-left-infoo shadow h-100 py-2">
+                        <div class="card-body">
+                           <div class="row no-gutters align-items-center">
+                              <div class="col mr-2">
+                                 <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                    Alınan Hizmet Sayısı
+                                 </div>
+                                 <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
+                              </div>
+                              <div class="col-auto">
+                                 <i class="fa-solid fa-inbox"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

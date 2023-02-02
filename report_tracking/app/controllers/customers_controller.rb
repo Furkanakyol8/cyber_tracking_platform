@@ -9,6 +9,12 @@ class CustomersController < ApplicationController
   def edit
     @user = User.find(params[:id])
   end
+  
+  def create
+    @user = User.find(params[:user_id])
+    @user.profile_photo.attach(params[:profile_photo])
+    render json: { profile_photo_url: user.profile_photo.url }
+  end
 
   def set_user
     @user = User.find(params[:id])

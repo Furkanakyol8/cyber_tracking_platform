@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'profile_photos/create'
 
   devise_for :users, sign_out_via: [:get, :post]
   resources :customers
@@ -10,6 +11,12 @@ Rails.application.routes.draw do
   get 'index.html', to: 'reports#index'
   get 'services', to: 'services#index'
   get 'profile', to: 'profiles#index'  # , as: :user_profile
+  resources :users do
+    member do
+      post :upload_profile_photo
+    end
+  end
+  
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Defines the root path route ("/")
