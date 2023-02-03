@@ -3,86 +3,93 @@
 						 <%= breadcrumb :home %>  <%= breadcrumb :profiles %> <%= breadcrumb :edit_user_registration %> 
 					</ol>
 </nav>
-<div class="d-flex justify-content-center w-100">
-	<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %> <%= render "users/shared/error_messages", resource: resource %>
-	<div class="container">
-		<br />
-		<br />
-		<form class="col mb-3">
-			<div class="form-group row">
-				<br />
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :first_name, class:"form-label", autofocus: true %><br />
-					<%= f.text_field :first_name, class:"form-control", id:"inputEmail4" %>
+
+	<div class="d-flex justify-content-center w-100">
+		<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %> <%= render "users/shared/error_messages", resource: resource %>
+		<div class="container">
+			<br />
+			<br />
+		<div class="profile-content" style="box-shadow: 0px 0px 10px #000000;">
+			<form class="col mb-3">
+				<div class="form-group row">
+					<br />
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :first_name, class:"form-label", autofocus: true %><br />
+						<%= f.text_field :first_name, class:"form-control", id:"inputEmail4" %>
+					</div>
+
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :last_name, class:"form-label" %><br />
+						<%= f.text_field :last_name, class:"form-control", id:"inputPassword4" %>
+					</div>
 				</div>
 
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :last_name, class:"form-label" %><br />
-					<%= f.text_field :last_name, class:"form-control", id:"inputPassword4" %>
-				</div>
-			</div>
+				<div class="form-group row">
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :phone, class:"form-label" %><br />
+						<%= f.text_field :phone, class:"form-control", id:"inputAddress" %>
+					</div>
 
-			<div class="form-group row">
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :phone, class:"form-label" %><br />
-					<%= f.text_field :phone, class:"form-control", id:"inputAddress" %>
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :username, class:"form-label" %><br />
+						<%= f.text_field :username, class:"form-control", id:"inputAddress2" %>
+					</div>
 				</div>
 
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :username, class:"form-label" %><br />
-					<%= f.text_field :username, class:"form-control", id:"inputAddress2" %>
+				<div class="form-group row">
+						<%= f.label :company_info, class:"form-label" %><br />
+						<%= f.text_area :company_info, class:"form-control", id:"inputCity" %>
+					
 				</div>
-			</div>
 
-			<div class="form-group row">
-					<%= f.label :company_info, class:"form-label" %><br />
-					<%= f.text_area :company_info, class:"form-control", id:"inputCity" %>
-				
-			</div>
-
-			<div class="form-group row">
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :email, class:"form-label" %><br />
-					<%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", id:"inputZip" %>
+				<div class="form-group row">
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :email, class:"form-label" %><br />
+						<%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", id:"inputZip" %>
+					</div>
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :current_password, class:"form-label" %> <br />
+						<%= f.password_field :current_password, autocomplete: "current-password", class:"form-control", id:"inputZip" %>
+						<i>(we need your current password to confirm your changes)</i>
+					</div>
 				</div>
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :current_password, class:"form-label" %> <br />
-					<%= f.password_field :current_password, autocomplete: "current-password", class:"form-control", id:"inputZip" %>
-					<i>(we need your current password to confirm your changes)</i>
-				</div>
-			</div>
 
-			<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-			<div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+				<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+				<div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+				<% end %>
+
+				<div class="form-group row">
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :password, class:"form-label" %> <br />
+						<%= f.password_field :password, autocomplete: "new-password", class:"form-control", id:"inputZip" %> <% if @minimum_password_length %>
+						<i>(leave blank if you don't want to change it)</i>
+						<br />
+						<em><%= @minimum_password_length %> characters minimum</em>
+						<% end %>
+					</div>
+
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<%= f.label :password_confirmation, class:"form-label" %><br />
+						<%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", id:"inputZip" %>
+					</div>
+				</div>
+
+				<div class="container text-center">
+					<%= button_to "Hesabımı Sil", registration_path(resource_name), data: { confirm: "Hesabı silmek istediğinize emin misiniz?" }, method: :delete, class:"btn btn-primary" %> <%= f.submit "Güncelle", class:"btn btn-primary " %>
+					<%= link_to "Geri", :back, class:"btn btn-primary " %>
+				</div>
+			</form>
+
 			<% end %>
 
-			<div class="form-group row">
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :password, class:"form-label" %> <br />
-					<%= f.password_field :password, autocomplete: "new-password", class:"form-control", id:"inputZip" %> <% if @minimum_password_length %>
-					<i>(leave blank if you don't want to change it)</i>
-					<br />
-					<em><%= @minimum_password_length %> characters minimum</em>
-					<% end %>
-				</div>
+			<div class="container py-5">
+				<form>
+					<input type="file" id="profile-photo-input" >
+					<%= button_to "Güncelle", method: :delete, class:"btn btn-primary" %> 
+				</form>
 
-				<div class="col-sm-6 mb-3 mb-sm-0">
-					<%= f.label :password_confirmation, class:"form-label" %><br />
-					<%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", id:"inputZip" %>
-				</div>
 			</div>
 
-			<div class="container text-center">
-				<%= button_to "Hesabımı Sil", registration_path(resource_name), data: { confirm: "Hesabı silmek istediğinize emin misiniz?" }, method: :delete, class:"btn btn-primary" %> <%= f.submit "Güncelle", class:"btn btn-primary " %>
-				<%= link_to "Geri", :back, class:"btn btn-primary " %>
-			</div>
-		</form>
-
-		<% end %>
-		<img id="profile-photo" src="#">
-<form>
-  <input type="file" id="profile-photo-input">
-  <button type="button" id="upload-button">Upload</button>
-</form>
+		</div>
 	</div>
-</div>
+	</div>

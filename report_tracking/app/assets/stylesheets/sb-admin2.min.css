@@ -231,7 +231,7 @@
   }
   
   button {
-    border-radius: 0;
+    border-radius: 10px;
   }
   
   button:focus:not(:focus-visible) {
@@ -4745,7 +4745,7 @@
   }
   
   .accordion > .card > .card-header {
-    border-radius: 0;
+    border-radius: 10px;
     margin-bottom: -1px;
   }
   
@@ -5458,7 +5458,7 @@
   }
   
   .list-group-flush {
-    border-radius: 0;
+    border-radius: 10px;
   }
   
   .list-group-flush > .list-group-item {

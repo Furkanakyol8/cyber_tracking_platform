@@ -3,13 +3,15 @@
       <%= breadcrumb :home %> <%= breadcrumb :customers %>
    </ol>
 </nav>
-<script
-   src="https://code.jquery.com/jquery-3.6.3.js"
-   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-   crossorigin="anonymous"></script>
-<script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+
+
 <div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
    <div class="d-grid place-items-start h-100">
       <div class="container py-5 text-center">
@@ -47,26 +49,16 @@
                </table>
                <div id="pagination"></div>
                <script>
-                  $(document).ready(function(){
-                     $('#myTable').DataTable({
-                  	"paging" : true,
-                         "pagingType": "full_numbers",
-                         "lengthMenu": [5,10,15],
-                         "bLengthChange": false,
-                         "bFilter": true,
-                         "language": {
-                               "paginate": {
-                                   "first": "İlk",
-                                   "previous": "Önceki",
-                                   "next": "Sonraki",
-                                   "last": "Son"
-                               },
-                               "search": "Ara:",
-                               
-                  }
-                  });
-                  });
-               </script>
+$(document).ready(function() {
+  $('#myTable').DataTable( {
+    "columnDefs": [ {
+      "targets": 0,
+      "visible": false,
+      "searchable": false
+    } ]
+  } );
+});
+</script>
             </div>
         </div>
     </div>
