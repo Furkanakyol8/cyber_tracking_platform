@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get 'index.html', to: 'reports#index'
   get 'services', to: 'services#index'
   get 'profile', to: 'profiles#index'  # , as: :user_profile
-  resources :users do
+  
+  resources :customers do
     member do
       post :upload_profile_photo
     end

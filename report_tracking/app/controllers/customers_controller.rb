@@ -21,4 +21,10 @@ class CustomersController < ApplicationController
   rescue ActiveRecord::RecordNotFound
     redirect_to user_path
   end
+
+  def upload_profile_photo
+    current_user.update_attributes(profile_photo: params[:profile_photo])
+    redirect_to profile_path
+  end
+  
 end

@@ -3,18 +3,23 @@
 						<%= breadcrumb :home %> <%= breadcrumb :customers %> <%= breadcrumb :new_report %> <%= breadcrumb :edit_report %>
 					</ol>
 </nav>
-<div class="profile-content" style="box-shadow: 0px 0px 10px #000000;">
-<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
-    <%= render "form", report: @report %>
 
-    <br>
 
-  <div class="d-grid col-md-2 mx-auto ">
-    <%= button_to "Raporu Görüntüle", @report, method: :get, class:"btn btn-light mb-2" %>
-    <%= button_to "Raporlara Geri Dön", reports_path, method: :get, class:"btn btn-light mb-2" %>
+<div class="container py-5">
+  
     
-  </div>
-</div>
-</div>
+      <div class="profile-content">
+      
+        <%= render "form", report: @report %>
 
- 
+        
+
+        <div class="d-grid gap-2 col-3 mx-auto mt-3">
+          <%= button_to "Raporu Görüntüle", @report, method: :get, class:"btn btn-primary mb-2" %>
+          <%= button_to "Raporlara Geri Dön", reports_path, method: :get, class:"btn btn-primary mb-2" %>
+        </div>
+
+      </div>
+    
+  
+</div>

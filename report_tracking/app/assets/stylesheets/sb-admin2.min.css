@@ -4182,6 +4182,7 @@
     padding-bottom: 0.5rem;
   }
   
+  
   .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
@@ -4558,7 +4559,7 @@
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
-    background-color: rgba(220, 221, 225, 0.5);
+    background-color: #031ba500;
   }
   
   .card-title {
@@ -6505,7 +6506,7 @@
   }
   
   .bg-light {
-    background-color: #f8f9fc !important;
+    background-color: #9e9e9e00 !important;
   }
 
   .bg-success {
@@ -6518,6 +6519,13 @@
   button.bg-light:focus {
     background-color: #d4daed !important;
   }
+
+  .element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
   
   .bg-dark {
     background-color: #5a5c69 !important;
@@ -6696,7 +6704,7 @@
   }
 
   .dark-bg {
-    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-image: linear-gradient(0deg,#0b1e40,#1a4896);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -9650,6 +9658,10 @@
   }
   
   .text-primary {
+    color: 	#20409d !important; 
+  }
+
+  .text-primaryy {
     color: 	#4e73df !important;
   }
   
@@ -9707,6 +9719,10 @@
   
   .text-dark {
     color: #5a5c69 !important;
+  }
+
+  .text-darkk {
+    color: #c3c9f3 !important;
   }
   
   a.text-dark:hover, a.text-dark:focus {
@@ -9960,7 +9976,7 @@
   
   .bg-gradient-primary {
     background-color: #4e73df;
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-image: linear-gradient(0deg,#0b1e40,#1a4896);
     background-size: cover;
   }
   

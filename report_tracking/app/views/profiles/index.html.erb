@@ -7,14 +7,14 @@
    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <div class="container">
-<div class="row profile">
+<div class="row profile py-5">
    <div class="col-md-3">
-      <div class="profile-sidebar" style="box-shadow: 0px 0px 10px #000000;">
+      <div class="profile-sidebar" style="box-shadow: 0px 0px 30px #000000;">
          <div class="profile-userpic">
             <img src="/img/profil_foto.jpg.jpeg" class="img-fluid mx-auto d-block rounded-circle border border-warning">
          </div>
          <div class="profile-usertitle">
-            <h1 class="text-center text-primary font-italic font-weight-bold my-3"><%= current_user.full_name.upcase %></h1>
+            <h1 class="text-center text-primaryy font-italic font-weight-bold my-3"><%= current_user.full_name.upcase %></h1>
          </div>
          <div class="profile-userbuttons">
          </div>
@@ -42,22 +42,22 @@
       </div>
    </div>
    <div class="col-md-9">
-      <div class="profile-content" style="box-shadow: 0px 0px 10px #000000;">
-         <h1 class="text-primary font-weight-bold">Kişisel Bilgilerim</h1>
+      <div class="profile-content" style="box-shadow: 0px 0px 30px #000000;">
+         <h1 class="text-primaryy font-weight-bold">Kişisel Bilgilerim</h1>
          <ul>
             <i class="fa-sharp fa-solid fa-user"></i>
-            <li class="text-dark font-weight-bold font-italic="><%= current_user.username.capitalize %></li>
+            <li class="text-darkk font-weight-bold font-italic="><%= current_user.username.capitalize %></li>
             <i class="fa-sharp fa-solid fa-user"></i>
-            <li class="text-dark font-weight-bold font-italic="><%= current_user.last_name.upcase %></li>
+            <li class="text-darkk font-weight-bold font-italic="><%= current_user.last_name.upcase %></li>
             <i class="fa-sharp fa-solid fa-envelope"></i>
-            <li class="text-dark font-weight-bold font-italic="><%= current_user.email %></li>
+            <li class="text-darkk font-weight-bold font-italic="><%= current_user.email %></li>
             <i class="fa-sharp fa-solid fa-phone"></i>
-            <li class="text-dark font-weight-bold font-italic="><%= current_user.phone %></li>
+            <li class="text-darkk font-weight-bold font-italic="><%= current_user.phone %></li>
          </ul>
-         <h1 class="text-primary font-weight-bold">Şirket Bilgilerim</h1>
+         <h1 class="text-primaryy font-weight-bold">Şirket Bilgilerim</h1>
          <ul>
             <i class="fa-sharp fa-solid fa-building"></i>
-            <li class="text-dark font-weight-bold font-italic"><%= current_user.company_info.capitalize %></li>
+            <li class="text-darkk font-weight-bold font-italic"><%= current_user.company_info.capitalize %></li>
          </ul>
          <div class="container overflow-hidden text-center" style="margin-top: 50px;">
             <div class="container-fluid">
@@ -67,7 +67,7 @@
                         <div class="card-bodyy">
                            <div class="row no-gutters align-items-center">
                               <div class="col mr-2">
-                                 <div class="text-xs font-weight-bold text-dark text-uppercase mb-1"> Yüklenen Rapor Sayısı</div>
+                                 <div class="text-xs font-weight-bold text-darkk text-uppercase mb-1"> Yüklenen Rapor Sayısı</div>
                                  <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><%= Report.count %></div>
@@ -91,7 +91,7 @@
                         <div class="card-body">
                            <div class="row no-gutters align-items-center">
                               <div class="col mr-2">
-                                 <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                 <div class="text-xs font-weight-bold text-darkk text-uppercase mb-1">
                                     Alınan Hizmet Sayısı
                                  </div>
                                  <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>

@@ -89,4 +89,5 @@ gem "bootsnap", "~> 1.15"
 
 gem "will_paginate", "~> 3.3"
 gem 'paperclip'
+gem 'carrierwave'
 

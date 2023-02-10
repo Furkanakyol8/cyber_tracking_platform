@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-  has_one_attached :profile_photo
+  has_attached_file :profile_photo
+  validates_attachment_content_type :profile_photo, content_type: /\Aimage\/.*\z/
 
 
   # Include default devise modules. Others available are:
