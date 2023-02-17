@@ -3,46 +3,36 @@
 						<%= breadcrumb :home %> <%= breadcrumb :customers %> <%= breadcrumb :new_report %>
 					</ol>
 </nav>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css" />
 
-<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
-	<div class="d-grid place-items-start h-100">
-		<div class="container mt-5 ">
-			
-				<div class="col-md-12">
-					<table id="example" class="" style="width:100%">
-						<thead >
-							<tr>
-								<th scope="row" class="text-dark col-1"></th>
-								<th scope="row" class="text-dark col-2">Title</th>
-								<th scope="row" class="text-dark col-5">Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row" class="text-dark lead col-1"></th>
-								<th><%= report.title %></th>
-								<td class="col-2"><%= report.description %></td>
-							</tr>
-						</tbody>
-					</table>
 
-					<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-               		<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-					<script> 
+<div class="container mt-5">
+  <div class="card shadow-sm bg-light">
+    <div class="card-body p-4" style="border-radius: 10px;">
+      <table class="table table-light table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="row" class="col-2"></th>
+            <th scope="row" class="col-4">Başlık</th>
+            <th scope="row" class="col-4">Açıklama</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="col-1"></th>
+            <th><%= report.title %></th>
+            <td class="col-2"><%= report.description %></td>
+          </tr>
+        </tbody>
+      </table>
 
-							$(document).ready(function () {
-			$('#example').DataTable();
-		});
-		</script>
-				</div>
-			</div>
-			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-				<% if current_user.admin?%> <%= button_to "Raporu Sil", @report, method: :delete, class:"btn btn-primary mb-2" %> 
-				<%= button_to "Raporu Düzenle", edit_report_path(@report), method: :get, class:"btn btn-primary mb-2" %> 
-				<%=button_to "Raporlara Geri Dön", reports_path, method: :get, class:"btn btn-primary mb-3" %> <% else %>
-				<%= button_to "Raporlara Geri Dön", reports_path, method: :get, class:"btn btn-primary mb-3" %> <% end %>
-			</div>
-		</div>
-	</div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <% if current_user.admin? %>
+          <%= button_to "Raporu Sil", @report, method: :delete, class:"btn btn-danger mb-2 me-2" %>
+          <%= button_to "Raporu Düzenle", edit_report_path(@report), method: :get, class:"btn btn-warning mb-2 me-2" %>
+        <% end %>
+        <%= button_to "Raporlara Geri Dön", reports_path, method: :get, class:"btn btn-primary mb-2" %>
+      </div>
+    </div>
+  </div>
 </div>
+

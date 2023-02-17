@@ -15,7 +15,7 @@ body {
   
   /* Profile sidebar */
   .profile-sidebar {
-    padding: 20px 0 10px 0;
+    padding: 30px 0 60px 0;
     background: linear-gradient(0deg,#0b1e40,#1a4896);
     /* background: url('https://images.unsplash.com/photo-1420496368970-d83b063b5b48?fit=crop&fm=jpg&h=700&q=80&w=1225') no-repeat center center; */
     background-size: 1400px 700px;
@@ -115,7 +115,7 @@ body {
   
   /* Profile Content */
   .profile-content {
-    padding: 20px;
+    padding: 50px;
     background: linear-gradient(0deg,#0b1e40,#1a4896);
     min-height: 460px;
     background-size: 1400px 700px;
@@ -123,6 +123,18 @@ body {
     background-attachment: fixed;
     border-radius: 20px! important;
     box-shadow: 0px 0px 10px #000000;
+  }
+  
+  .profile-contentt {
+    padding: 50px;
+    background: linear-gradient(0deg,#0b1e40,#1a4896);
+    min-height: 460px;
+    background-size: 1400px 700px;
+    background-position: 30%;
+    background-attachment: fixed;
+    border-radius: 20px! important;
+    box-shadow: 0px 0px 10px #000000;
+    width: 600px;
   }
   
   

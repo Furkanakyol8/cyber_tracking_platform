@@ -38,8 +38,8 @@
                         <td class="col-2"><%= user.email %></td>
                         <td class="col-2"><%= user.phone %></td>
                         <td class="col-2"><%= user.company_info %></td>
-                        <td class="col-2"><%= button_to "Düzenle", edit_customer_path(user.id), method: :get, class:"btn btn-dark mb-5" %></td>
-                        <td class="col-2"><%= button_to "Rapor Ekle", new_report_path(user.id), method: :get, class:"btn btn-dark mb-5"%></td>
+                        <td class="col-2"><%= button_to "Düzenle", edit_customer_path(user.id), method: :get, class:"btn btn-primary mb-5" %></td>
+                        <td class="col-2"><%= button_to "Rapor Ekle", new_report_path(user.id), method: :get, class:"btn btn-primary mb-5"%></td>
                      </tr>
                      <% end %>
                   </tbody>
