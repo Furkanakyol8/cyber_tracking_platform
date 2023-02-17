@@ -1,53 +1,50 @@
 <nav aria-label="breadcrumb">
-					<ol class="breadcrumb" style="margin: 0">
-						 <%= breadcrumb :home %> <%= breadcrumb :reports %>
-					</ol>
+  <ol class="breadcrumb" style="margin: 0">
+    <%= breadcrumb :home %> <%= breadcrumb :reports %>
+  </ol>
 </nav>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css" />
-<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
-  <div class="d-grid justify-content-md-end">
-  <% if current_user.admin?%>
-  <%= button_to "Yeni Rapor", new_report_path, method: :get, class:"btn btn-primary mb-2" %></button>
-  <% end %>
-  </div>
-    <div class="d-grid place-items-start h-100">
-      <div class="container mt-5">
-        
-          
-            <table id="example" class="" style="width:100%">
-              <thead >
-              <tr >
-              <th scope="row" class="text-dark col-1 "><b></b></th>
-              <th scope="row" class="text-dark col-3 "><b>Başlık</b></th>
-              <th scope="row" class="text-dark col-3 "><b>Açıklama</b></th>
-              <th scope="row" class="text-dark col-1 "><b> </b></th>
-              
-              </tr>
-            </thead>
-            <tbody>
-              <% @reports.first(10).each do |report| %>
-              <tr>
-                <th><%= report.id %></th>
-                <td><%= report.title %></td>
-                <td class="col-2"><%= report.description %></td>
-                <td><%= button_to "Göster", report, method: :get, class:"btn btn-primary mb-2" %></td>
-                
-              </tr>
-              <% end %>
-            </tbody>
-            </table>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-               		<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-					<script> 
-
-							$(document).ready(function () {
-			$('#example').DataTable();
-		});
-		</script>
-          </div>
-        
-        
-
-      
+<div class="p-5 h-100" style="background-color: rgba(211, 211, 211, 0.3)">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col text-end">
+        <% if current_user.admin? %>
+          <%= button_to "Yeni Rapor", new_report_path, method: :get, class: "btn btn-primary" %>
+        <% end %>
+      </div>
     </div>
- </div>
+
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <table id="example" class="table table-striped" style="width: 100%">
+          <thead>
+            <tr>
+              <th class="text-dark" scope="col"></th>
+              <th class="text-dark" scope="col">Başlık</th>
+              <th class="text-dark" scope="col">Açıklama</th>
+              <th class="text-dark" scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @reports.first(10).each do |report| %>
+              <tr>
+                <td><%= report.id %></td>
+                <td><%= report.title %></td>
+                <td><%= report.description %></td>
+                <td><%= button_to "Göster", report, method: :get, class: "btn btn-primary" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#example').DataTable();
+    });
+  </script>
+</div>

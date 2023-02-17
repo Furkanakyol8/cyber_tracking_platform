@@ -6,81 +6,74 @@
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css" />
 
+<div class="p-5 h-100" style="background-color: rgba(211, 211, 211, 0.3)">
+  <div class="container mt-5">
+    <table id="myTable" class="mdl-data-table" style="width:100%">
+      <thead>
+        <tr>
+          <th class="text-dark"><b></b></th>
+          <th class="text-dark">İsim</th>
+          <th class="text-dark">Soyisim</th>
+          <th class="text-dark">Kullanıcı Adı</th>
+          <th class="text-dark col-4">Email</th>
+          <th class="text-dark col-3">Telefon</th>
+          <th class="text-dark">Şirket Adı</th>
+          <th class="text-dark">Düzenle</th>
+          <th class="text-dark">Rapor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.first(10).each do |user| %>
+        <tr>
+          <th scope="row" class="text-primary lead col-1"><%= user.id %></th>
+          <td class="col-2"><%= user.first_name %></td>
+          <td class="col-2"><%= user.last_name %></td>
+          <td class="col-2"><%= user.username %></td>
+          <td class="col-2"><%= user.email %></td>
+          <td class="col-2"><%= user.phone %></td>
+          <td class="col-2"><%= user.company_info %></td>
+          <td class="col-2"><%= button_to "Düzenle", edit_customer_path(user.id), method: :get, class:"btn btn-primary mb-5" %></td>
+          <td class="col-2"><%= button_to "Rapor Ekle", new_report_path(user.id), method: :get, class:"btn btn-primary mb-5" %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
 
+    <script>
+      function filterGlobal() {
+        $('#myTable')
+          .DataTable()
+          .search($('#global_filter').val(), $('#global_regex').prop('checked'), $('#global_smart').prop('checked'))
+          .draw();
+      }
 
-<div class="p-5 h-100" style="background-color: RGBA(	211,211,211, 0.3)">
-   
-      <div class="container mt-5">
+      function filterColumn(i) {
+        $('#myTable')
+          .DataTable()
+          .column(i)
+          .search(
+            $('#col' + i + '_filter').val(),
+            $('#col' + i + '_regex').prop('checked'),
+            $('#col' + i + '_smart').prop('checked')
+          )
+          .draw();
+      }
 
-            
-               <table id="myTable" class="mdl-data-table" style="width:100%">
-                  <thead>
-                     <tr>
-                        <th class="text-dark "><b></b></th>
-                        <th class="text-dark ">İsim</th>
-                        <th class="text-dark ">Soyisim</th>
-                        <th class="text-dark ">Kullanıcı Adı</th>
-                        <th class="text-dark  col-4">Email</th>
-                        <th class="text-dark  col-3">Telefon</th>
-                        <th class="text-dark ">Şirket Adı</th>
-                        <th class="text-dark ">Düzenle</th>
-                        <th class="text-dark ">Rapor</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <% @users.first(10).each do |user| %>
-                     <tr>
-                        <th scope="row" class="text-primary lead col-1"><%= user.id %></th>
-                        <td class="col-2"><%= user.first_name %></td>
-                        <td class="col-2"><%= user.last_name %></td>
-                        <td class="col-2"><%= user.username %></td>
-                        <td class="col-2"><%= user.email %></td>
-                        <td class="col-2"><%= user.phone %></td>
-                        <td class="col-2"><%= user.company_info %></td>
-                        <td class="col-2"><%= button_to "Düzenle", edit_customer_path(user.id), method: :get, class:"btn btn-primary mb-5" %></td>
-                        <td class="col-2"><%= button_to "Rapor Ekle", new_report_path(user.id), method: :get, class:"btn btn-primary mb-5"%></td>
-                     </tr>
-                     <% end %>
-                  </tbody>
-               </table>
-               
-               <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-               <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-               
-               <script>
-                  function filterGlobal() {
-                     $('#myTable')
-                        .DataTable()
-                        .search($('#global_filter').val(), $('#global_regex').prop('checked'), $('#global_smart').prop('checked'))
-                        .draw();
-                  }
-                  
-                  function filterColumn(i) {
-                     $('#myTable')
-                        .DataTable()
-                        .column(i)
-                        .search(
-                              $('#col' + i + '_filter').val(),
-                              $('#col' + i + '_regex').prop('checked'),
-                              $('#col' + i + '_smart').prop('checked')
-                        )
-                        .draw();
-                  }
-                  
-                  $(document).ready(function () {
-                     $('#myTable').DataTable();
-                  
-                     $('input.global_filter').on('keyup click', function () {
-                        filterGlobal();
-                     });
-                  
-                     $('input.column_filter').on('keyup click', function () {
-                        filterColumn($(this).parents('tr').attr('data-column'));
-                     });
-                  });
-               </script>
-           
-        
-      </div>
+      $(document).ready(function () {
+        $('#myTable').DataTable();
+
+        $('input.global_filter').on('keyup click', function () {
+          filterGlobal();
+        });
+
+        $('input.column_filter').on('keyup click', function () {
+          filterColumn($(this).parents('tr').attr('data-column'));
+        });
+      });
+    </script>
+  </div>
 </div>
+

@@ -1,7 +1,7 @@
 <nav aria-label="breadcrumb">
-					<ol class="breadcrumb" style="margin: 0">
-						<%= breadcrumb :home %> <%= breadcrumb :customers %> <%= breadcrumb :edit_customer %>
-					</ol>
+	<ol class="breadcrumb" style="margin: 0">
+		<%= breadcrumb :home %> <%= breadcrumb :customers %> <%= breadcrumb :edit_customer %>
+	</ol>
 </nav>
 <div class="d-grid place-items-center h-75">
 	<%= form_with(model: @customer) do |f| %>
@@ -41,6 +41,10 @@
 
 			
 		</form>
+		<div class="text-center">
+  			<%= f.submit "Güncelle", class: "btn btn-primary" %>
+		</div>
+
 
 		<% end %>
 	</div>
